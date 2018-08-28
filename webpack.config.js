@@ -1,5 +1,5 @@
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: {
         'index': __dirname + '/source/index.js'
     },
@@ -22,6 +22,11 @@ module.exports = {
                 }
             ],
         }],
+    },
+    externals : {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+        // 'prop-types': 'PropTypes',
     },
     resolve: {
         modules: ['node_modules'],

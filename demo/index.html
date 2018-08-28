@@ -5,81 +5,17 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo "react-jsonschema-form"</title>
-    <style type="text/css">
-        .overlay {
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-            text-align: center;
-            white-space: nowrap;
-            overflow-y: auto;
-            background-color: rgba(0,0,0,0.5);
-        }
-        .overlay:before {
-            display: inline-block;
-            vertical-align: middle;
-            height: 100%;
-            content: '';
-        }
-        .overlay__body {
-            position: relative;
-            display: inline-block;
-            max-width: 930px;
-            margin: 100px 100px 100px 100px;
-            padding: 30px 30px 30px 30px;
-            border-radius: 2px;
-            box-shadow: 0 1px 5px #777;
-            background-color: #eee;
-            text-align: left;
-            white-space: normal;
-            vertical-align: middle;
-        }
-        .overlay__button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            bottom: auto;
-            left: auto;
-            width: 24px;
-            height: 24px;
-            padding: 0;
-            margin: 0;
-            border: 2px solid transparent;
-            outline: 0 none;
-            background-color: transparent;
-            cursor: pointer;
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
-        .overlay__button:before,
-        .overlay__button:after {
-            position: absolute;
-            content: '';
-            background-color: #666;
-        }
-        .overlay__button:before {
-            left: 0;
-            top: 9px;
-            width: 100%;
-            height: 2px;
-        }
-        .overlay__button:after {
-            left: 9px;
-            top: 0;
-            width: 2px;
-            height: 100%;
-        }
-        .overlay__button:hover:before,
-        .overlay__button:hover:after {
-            background-color: #900;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/javascript" src="../build/index.js"></script>
+
+    <div class="container">
+        <h1>JSON Schema Form</h1>
+        <div id="root"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js" type="text/javascript"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.2/prop-types.min.js" type="text/javascript"></script>-->
+    <script src="../build/index.js" type="text/javascript"></script>
 </body>
 </html>
