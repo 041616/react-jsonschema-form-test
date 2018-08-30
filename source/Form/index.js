@@ -1,27 +1,15 @@
 import React from 'react';
-import Form from "react-jsonschema-form";
+import Form from 'react-jsonschema-form';
+import { schema, uiSchema } from '../Schema';
 
 
-const schema = {
-    title: 'Todo',
-    type: 'object',
-    required: ['title'],
-    properties: {
-        title: {
-            type: 'string',
-            title: 'Title',
-            default: 'A new task'
-        },
-        done: {
-            type: 'boolean',
-            title: 'Done?',
-            default: false
-        }
-    }
+const SchemaForm = () => {
+    return <Form
+        schema={schema}
+        noHtml5Validate={true}
+        uiSchema={schema.ui}
+    />
 };
-
-
-const SchemaForm = () => <Form schema={schema}/>;
 
 
 export { SchemaForm as Form };
