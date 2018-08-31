@@ -4,72 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo "react-jsonschema-form"</title>
+    <title>"react-jsonschema-form"</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <style>
+        fieldset{
+            margin-left: 20px;
+            padding-left: 20px;
+            overflow: hidden;
+        }
+        .tree-line{
+            position: relative;
+        }
+        .tree-line:after{
+            position: absolute;
+            left: -20px;
+            bottom: 50%;
+            width: 15px;
+            height: 3000px;
+            border-width: 0 0 1px 1px;
+            border-color: #ced4da;
+            border-style: solid;
+            content: '';
+        }
+        .legend, fieldset > .field-description:first-child{
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin-bottom: .5rem;
+            font-size: 1.5rem;
+            line-height: inherit;
+            color: inherit;
+            white-space: normal;
+        }
+    </style>
 </head>
 <body>
-<div class="row">
-    <div class="col-4">
-      <div id="list-exampler" class="list-group">
-        <a class="list-group-item list-group-item-action active" href="#list-item-1r">Item 1</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2r">Item2</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3r">Item 3</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-4r">Item 4</a>
-      </div>
-    </div>
-    <div class="col-8">
-      <div data-spy="scroll" data-target="#list-exampler" data-offset="0" class="scrollspy-example" style="position: relative; overflow: auto; height: 300px">
-        <h4 id="list-item-1r">Item 1</h4>
-        <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
-        <h4 id="list-item-2r">Item 2</h4>
-        <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
-        <h4 id="list-item-3r">Item 3</h4>
-        <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-        <h4 id="list-item-4r">Item 4</h4>
-        <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-      </div>
-    </div>
-  </div>
-    <div class="row">
-        <div class="col-4">
-            <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-            </div>
-        </div>
-        <div class="col-8">
-            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="position: relative; overflow: auto; height: 300px">
-                <h4 id="list-item-1">Item 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut autem culpa cumque cupiditate nobis nulla repellat. Alias aspernatur assumenda at eligendi, incidunt quidem quo reiciendis repudiandae soluta, tempora vitae!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid amet culpa delectus deleniti doloremque doloribus enim laboriosam laudantium mollitia necessitatibus officiis praesentium quisquam tenetur ut vel, voluptate. Alias, sapiente.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at autem dolores eligendi esse, facere iure laudantium nisi officiis quas qui quis quos reiciendis repudiandae vero. Aut neque repellat tempore.</p>
-                <h4 id="list-item-2">Item 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consectetur dolore magnam ullam? Ab laudantium natus nesciunt nihil non quae quo sunt voluptatum. Atque beatae consectetur facere facilis necessitatibus quis?</p>
-                <h4 id="list-item-3">Item 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque explicabo quia recusandae veritatis! Ab aut blanditiis dignissimos ex facilis iste minus nihil non obcaecati odio odit quasi quia, saepe?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque debitis dignissimos et libero mollitia odit officia placeat quae quis quos similique, sit vel voluptatem. Cum delectus libero odio!</p>
-                <h4 id="list-item-4">Item 4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut autem culpa cumque cupiditate nobis nulla repellat. Alias aspernatur assumenda at eligendi, incidunt quidem quo reiciendis repudiandae soluta, tempora vitae!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid amet culpa delectus deleniti doloremque doloribus enim laboriosam laudantium mollitia necessitatibus officiis praesentium quisquam tenetur ut vel, voluptate. Alias, sapiente.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at autem dolores eligendi esse, facere iure laudantium nisi officiis quas qui quis quos reiciendis repudiandae vero. Aut neque repellat tempore.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <h1>JSON Schema Form</h1>
-        <div id="root"></div>
-    </div>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js" type="text/javascript"></script>-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js" type="text/javascript"></script>-->
-
+    <div id="root" class="container mt-4 mb-4"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.development.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.development.js" type="text/javascript"></script>
-
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.2/prop-types.min.js" type="text/javascript"></script>-->
     <script src="../build/index.js" type="text/javascript"></script>
 </body>
 </html>

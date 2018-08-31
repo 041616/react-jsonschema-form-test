@@ -1,7 +1,10 @@
+const propertyName = 'color';
+
+
 export default {
-    color: {
+    [propertyName]: {
         $ref: '#/definitions/color',
-        title: 'Main text/border color',
-        description: 'Main text/border color (hex, rgb, rgba)',
+        title: propertyName,
+        description: 'Basic text color of the design',
     }
 };

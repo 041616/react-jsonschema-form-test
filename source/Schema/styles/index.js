@@ -9,13 +9,14 @@ import linkHoverColor from './properties/link-hover-color';
 const properties = Object.assign({}, backgroundColor, color, fontFamily, linkColor, linkHoverColor);
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
+const propertyName = 'styles';
 
 
 export default {
-    styles: {
+    [propertyName]: {
         type: 'object',
-        title: 'Main design styles',
-        description: 'Main design styles',
+        title: propertyName,
+        description: 'Basic design styles',
         additionalProperties: false,
         required,
         properties,

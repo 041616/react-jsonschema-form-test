@@ -11,8 +11,7 @@ const ui = getKeyValues('ui', properties);
 
 export const schema = {
     type: 'object',
-    title: 'Config of the design',
-    description: 'Config of the design',
+    description: 'Design settings',
     additionalProperties: false,
     definitions,
     required,

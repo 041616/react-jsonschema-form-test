@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack",
+    "webpack": "webpack -w --progress",
     "prepublish": "webpack --optimize-minimize"
   },
   "keywords": [],
@@ -32,6 +32,7 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
+    "react-color": "^2.14.1",
     "react-jsonschema-form": "1"
   }
 }

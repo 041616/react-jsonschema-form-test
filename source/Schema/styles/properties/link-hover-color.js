@@ -1,7 +1,10 @@
+const propertyName = 'linkHoverColor';
+
+
 export default {
-    linkHoverColor: {
+    [propertyName]: {
         $ref: '#/definitions/color',
-        title: 'Main link hover color',
-        description: 'Main link hover color (hex, rgb, rgba)',
+        title: propertyName,
+        description: 'Basic link hover color of the design',
     }
 };

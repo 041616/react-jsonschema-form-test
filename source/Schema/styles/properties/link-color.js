@@ -1,7 +1,10 @@
+const propertyName = 'linkColor';
+
+
 export default {
-    linkColor: {
+    [propertyName]: {
         $ref: '#/definitions/color',
-        title: 'Main link color',
-        description: 'Main link color (hex, rgb, rgba)',
+        title: propertyName,
+        description: 'Basic link color of the design',
     }
 };

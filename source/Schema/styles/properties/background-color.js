@@ -1,10 +1,13 @@
+const propertyName = 'backgroundColor';
+
+
 export default {
-    backgroundColor: {
+    [propertyName]: {
         $ref: '#/definitions/color',
-        title: 'Main background color',
-        description: 'Main background color (hex, rgb, rgba)',
+        title: propertyName,
+        description: 'Basic background color of the design',
         ui: {
-            'ui:widget': 'color'
+            'ui:widget': 'customColorWidget'
         }
     }
 };

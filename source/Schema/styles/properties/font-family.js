@@ -1,7 +1,13 @@
+const propertyName = 'fontFamily';
+
+
 export default {
-    fontFamily: {
+    [propertyName]: {
         $ref: '#/definitions/font',
-        title: 'Main font family',
-        description: 'Main font family',
+        title: propertyName,
+        description: 'Basic font family of the desing',
+        ui: {
+            'ui:help': 'Enter a link to the font'
+        },
     }
 };
