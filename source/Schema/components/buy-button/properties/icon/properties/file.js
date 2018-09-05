@@ -1,7 +1,12 @@
+import definitions from 'Schema/definitions';
+
+
+const propertyName = 'file';
+
+
 export default {
-    file: {
-        $ref: '#/definitions/file',
-        title: 'SVG icon',
+    [propertyName]: Object.assign({
+        title: propertyName,
         description: 'SVG icon for buy button',
-    }
+    }, definitions.file)
 };

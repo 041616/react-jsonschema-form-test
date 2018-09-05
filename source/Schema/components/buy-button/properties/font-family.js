@@ -1,7 +1,12 @@
+import definitions from 'Schema/definitions';
+
+
+const propertyName = 'fontFamily';
+
+
 export default {
-    fontFamily: {
-        $ref: '#/definitions/font',
-        title: 'Button font family',
-        description: 'Button font family',
-    }
+    [propertyName]: Object.assign({
+        title: propertyName,
+        description: '"Buy" button font family',
+    }, definitions.font)
 };

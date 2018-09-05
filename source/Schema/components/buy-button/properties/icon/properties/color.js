@@ -1,7 +1,12 @@
+import definitions from 'Schema/definitions';
+
+
+const propertyName = 'color';
+
+
 export default {
-    color: {
-        $ref: '#/definitions/color',
-        title: 'Icon color',
-        description: 'Icon color (hex, rgb, rgba)',
-    }
+    [propertyName]: Object.assign({
+        title: propertyName,
+        description: '"Buy" button icon color',
+    }, definitions.color)
 };

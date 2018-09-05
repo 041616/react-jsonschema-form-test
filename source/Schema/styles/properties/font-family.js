@@ -1,13 +1,12 @@
+import definitions from 'Schema/definitions';
+
+
 const propertyName = 'fontFamily';
 
 
 export default {
-    [propertyName]: {
-        $ref: '#/definitions/font',
+    [propertyName]: Object.assign({
         title: propertyName,
-        description: 'Basic font family of the desing',
-        ui: {
-            'ui:help': 'Enter a link to the font'
-        },
-    }
+        description: 'Basic font-family of the desing',
+    }, definitions.font)
 };

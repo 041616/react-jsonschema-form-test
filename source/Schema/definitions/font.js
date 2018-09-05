@@ -1,7 +1,6 @@
 export default {
-    font: {
-        type: 'string',
-        format: 'uri',
-        pattern: '^(https?|wss?|ftp)://'
-    }
-}
+    type: 'string',
+    ui: {
+        'ui:help': 'Comma separated font-family names'
+    },
+};

@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     mode: 'development',
     entry: {
@@ -31,5 +33,8 @@ module.exports = {
     resolve: {
         modules: ['node_modules'],
         extensions: ['.js', '.jsx'],
+        alias: {
+            Schema: path.resolve(__dirname, 'source/Schema/'),
+        },
     },
 };

@@ -1,7 +1,12 @@
+import definitions from 'Schema/definitions';
+
+
+const propertyName = 'textColor';
+
+
 export default {
-    color: {
-        $ref: '#/definitions/color',
-        title: 'Button text color',
-        description: 'Button text color (hex, rgb, rgba)',
-    }
+    [propertyName]: Object.assign({
+        title: propertyName,
+        description: '"Buy" button text color',
+    }, definitions.color)
 };

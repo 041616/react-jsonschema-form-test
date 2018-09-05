@@ -1,12 +1,12 @@
-import { getKeyValues } from '../utils';
+import { getKeyValues } from 'Schema/utils';
 import backgroundColor from './properties/background-color';
-import color from './properties/color';
+import textColor from './properties/text-color';
 import fontFamily from './properties/font-family';
 import linkColor from './properties/link-color';
 import linkHoverColor from './properties/link-hover-color';
 
 
-const properties = Object.assign({}, backgroundColor, color, fontFamily, linkColor, linkHoverColor);
+const properties = Object.assign({}, backgroundColor, textColor, fontFamily, linkColor, linkHoverColor);
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
 const propertyName = 'styles';

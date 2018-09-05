@@ -1,16 +1,17 @@
-import { getKeyValues } from '../utils';
+import { getKeyValues } from 'Schema/utils';
 import buyButton from './buy-button';
 
 
 const properties = Object.assign({}, buyButton);
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
+const propertyName = 'components';
 
 
 export default {
-    components: {
+    [propertyName]: {
         type: 'object',
-        title: 'Design components',
+        title: propertyName,
         description: 'Design components',
         additionalProperties: false,
         required,

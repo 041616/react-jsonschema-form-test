@@ -1,7 +1,12 @@
+import definitions from 'Schema/definitions';
+
+
+const propertyName = 'hoverColor';
+
+
 export default {
-    hoverColor: {
-        $ref: '#/definitions/color',
-        title: 'Icon hover color',
-        description: 'Icon hover color (hex, rgb, rgba)',
-    }
+    [propertyName]: Object.assign({
+        title: propertyName,
+        description: '"Buy" button icon hover color',
+    }, definitions.color)
 };
