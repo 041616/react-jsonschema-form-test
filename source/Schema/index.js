@@ -1,5 +1,4 @@
 import { getKeyValues } from './utils';
-import definitions from './definitions';
 import styles from './styles';
 import components from './components';
 
@@ -13,7 +12,6 @@ export const schema = {
     type: 'object',
     description: 'Design settings',
     additionalProperties: false,
-    definitions,
     required,
     properties,
     ui,
