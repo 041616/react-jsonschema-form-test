@@ -88,6 +88,7 @@ class CustomColorWidget extends React.Component {
                     value={inputBackgroundColor || ''}
                     required={this.props.required}
                     readOnly={this.props.readonly}
+                    onChange={(event) => {debugger;}}
                     onClick={this.handleClick}
                     style={{
                         backgroundColor: inputBackgroundColor,

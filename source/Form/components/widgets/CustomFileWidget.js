@@ -85,6 +85,7 @@ class CustomFileWidget extends React.Component {
                     multiple={multiple}
                     disabled={readonly || disabled}
                     required={required}
+                    accept='.svg'
                 />
                 <FilesInfo filesInfo={filesInfo}/>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from 'react-jsonschema-form';
+import { saveAs } from 'file-saver/FileSaver';
 import { schema } from 'Schema';
 import primarySchema from 'Schema/styles';
 import { CustomFileWidget } from './components/widgets/CustomFileWidget';
@@ -7,16 +8,16 @@ import { CustomColorWidget } from './components/widgets/CustomColorWidget';
 import { FieldTemplate } from './components/fields/FieldTemplate';
 import { ObjectFieldTemplate } from './components/fields/ObjectFieldTemplate';
 import { ErrorListTemplate } from './components/ErrorListTemplate';
+import { LoadButton } from './components/LoadConfigButton';
 
 
-// const initSchema = {
-//     styles: {
-//         backgroundColor: '#fefefe',
-//         textColor: '#333',
-//         fontFamily: 'Arial, Helvetica, sans-serif',
-//         linkColor: '#1a0dab',
-//     }
-// };
+const initFormData = {
+    backgroundColor: '#fefefe',
+    textColor: '#333',
+    fontFamily: 'Arial, Helvetica, sans-serif',
+    linkColor: '#1a0dab',
+    linkHoverColor: '#1a0dab',
+}
 
 
 function createDefaultConfig(initFormData) {
@@ -34,6 +35,11 @@ function createDefaultConfig(initFormData) {
 
 const widgets = { CustomColorWidget, CustomFileWidget };
 
+const isConfirmed = () => confirm(
+    'WARNING: current configuration data will be erased! \n' +
+    'Would you like to continue?'
+);
+
 
 class SchemaForm extends React.Component {
     constructor(props) {
@@ -45,41 +51,54 @@ class SchemaForm extends React.Component {
             formData: {},
             isFormBlank: true,
         };
-        this.count = 0;
-        this.handleSubmitClick = this.handleSubmitClick.bind(this);
+        this.handleFormSubmit = this.handleFormSubmit.bind(this);
+        this.handleFormChange = this.handleFormChange.bind(this);
         this.handleCreateConfigClick = this.handleCreateConfigClick.bind(this);
-    };
+        this.handleConfigLoad = this.handleConfigLoad.bind(this);
+    }
 
-    handleSubmitClick(data) {
+    handleConfigLoad(rawJSON) {
+        this.setState({
+            formSchema: schema,
+            formData: JSON.parse(rawJSON),
+            isFormBlank: false,
+        });
+    }
+
+    handleFormSubmit(data) {
         if (this.state.isFormBlank) {
             this.setState({
                 formSchema: schema,
                 formData: createDefaultConfig(data.formData),
                 isFormBlank: false,
             });
+        } else {
+            const stringifiedFormData = JSON.stringify(data.formData, null, '  ');
+            const blob = new Blob(
+                [stringifiedFormData],
+                { type: `text/plain;charset=${document.characterSet}` }
+            );
+            saveAs(blob, 'design-settings.json');
         }
-    };
+    }
+
+    handleFormChange(data) {
+        debugger;
+        data.formData = this.state.formData;
+        return data
+    }
 
     handleCreateConfigClick() {
-        const isConfirmed = confirm(
-            'WARNING: current configuration data will be erased! \n' +
-            'Would you like to continue?'
-        );
-        if (isConfirmed) {
-            this.count = 0;
+        if (isConfirmed()) {
             this.setState({
                 formSchema: this.initSchema,
                 formData: {},
                 isFormBlank: true,
             });
         }
-    };
+    }
 
     render() {
-        this.count = this.count + 1;
-
-        const shouldRenderErrorList = this.count > 1;
-        debugger;
         const { formSchema, formData, isFormBlank } = this.state;
         return (
             <Form
@@ -88,19 +107,23 @@ class SchemaForm extends React.Component {
                 FieldTemplate={FieldTemplate}
                 ObjectFieldTemplate={ObjectFieldTemplate}
                 ErrorList={ErrorListTemplate}
-                showErrorList={true}
+                showErrorList={false}
                 widgets={widgets}
-                onSubmit={this.handleSubmitClick}
+                onSubmit={this.handleFormSubmit}
+                onChange={this.handleFormChange}
                 noHtml5Validate={true}
                 formData={formData}
-                formContext={{ shouldRenderErrorList }}
             >
                 <div className='fixed-top pt-2 pb-2 bg-white shadow-sm'>
                     <div className='container'>
                         <button type='submit' className='btn btn-sm btn-info'>
-                            {isFormBlank ? 'Create' : 'Submit' }
+                            {isFormBlank ? 'Create' : 'Validate & Save' }
                         </button>
-                        {/*<button type='reset' className='btn btn-info ml-2'>Clear</button>*/}
+                        <LoadButton
+                            className='btn btn-sm btn-info ml-2'
+                            onLoad={this.handleConfigLoad}
+                            shouldLoad={isConfirmed}
+                        >Open</LoadButton>
                         {!isFormBlank ? (
                             <button
                                 type='button'
