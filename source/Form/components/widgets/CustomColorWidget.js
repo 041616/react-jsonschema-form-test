@@ -18,42 +18,55 @@ function isRGBAColor(color) {
 };
 
 
-function extractRGBAFromHex(hex) {
-    if (!isHexColor(hex)) throw new Error('[hexToRgba] incorrect Hex value');
-    let c = hex.substring(1).split('');
-    if (c.length === 3) c = [c[0], c[0], c[1], c[1], c[2], c[2]];
-    c = `0x${c.join('')}`;
-    return { r: (c>>16)&255, g: (c>>8)&255, b: c&255, a: 1 };
+function extractRGBA(color) {
+    if (isRGBAColor(color)) {
+        const c = color.substring(color.indexOf('(') + 1, color.lastIndexOf(')')).split(/\s*,\s*/);
+        return c.length > 3 ? {
+            r: c[0], g: c[1], b: c[2], a: c[3]
+        } : {
+            r: c[0], g: c[1], b: c[2], a: 1
+        };
+    } else if (isHexColor(color)) {
+        let c = color.substring(1).split('');
+        if (c.length === 3) c = [c[0], c[0], c[1], c[1], c[2], c[2]];
+        c = `0x${c.join('')}`;
+        return { r: (c>>16)&255, g: (c>>8)&255, b: c&255, a: 1 };
+    }
+    throw new Error('[extractRGBA] invalid color value');
 };
 
 
-function getColorValue(color) {
-    if (!color.rgb) return { backgroudColor: null, textColor: null };
-    const { r, g, b, a } = color.rgb;
+function getColorData(color) {
+    if (!color) return { backgroudColor: null, textColor: null };
+    const { r, g, b, a } = color.rgb || extractRGBA(color);
     return {
-        backgroudColor: a < 1 ? `rgba(${r}, ${g}, ${b}, ${a})` : color.hex,
+        backgroudColor: a < 1 ? `rgba(${r}, ${g}, ${b}, ${a})` : color.hex || color,
         textColor: isColorDark(r, g, b, a) ? '#fff' : null,
     };
+};
+
+
+const ColorPicker = ({ enable, color, onChange, onClose }) => {
+    if (!enable) return null;
+    return (
+        <div className='overlay'>
+            <div className='overlay-background-layer' onClick={onClose}/>
+            <div className='overlay-body'>
+                <SketchPicker color={color} onChangeComplete={onChange} width={400}/>
+            </div>
+        </div>
+    );
 };
 
 
 class CustomColorWidget extends React.Component {
     constructor(props) {
         super(props);
-        const initColor = {};
-        if (this.props.value) {
-            const { r, g, b, a } = extractRGBAFromHex(this.props.value);
-            initColor.rgb = { r, g, b, a };
-            initColor.hex = this.props.value;
-        }
-        this.state = {
-            displayColorPicker: false,
-            color: initColor,
-        };
+        this.state = { displayColorPicker: false };
         this.handleClick = this.handleClick.bind(this);
         this.handleClose = this.handleClose.bind(this);
         this.handleChange = this.handleChange.bind(this);
-    };
+    }
 
     componentWillUnmount() {
         document.body.style.overflow = null;
@@ -63,54 +76,46 @@ class CustomColorWidget extends React.Component {
         const { displayColorPicker } = this.state;
         document.body.style.overflow = !displayColorPicker ? 'hidden' : null;
         this.setState({ displayColorPicker: !displayColorPicker });
-    };
+    }
 
     handleClose() {
         document.body.style.overflow = null;
         this.setState({ displayColorPicker: false });
-    };
+    }
 
     handleChange(color) {
-        this.props.onChange(getColorValue(color).backgroudColor || '');
-        this.setState({ color });
-    };
+        this.props.onChange(getColorData(color).backgroudColor || '');
+    }
 
     render() {
-        const colorData = getColorValue(this.state.color);
+        const colorData = getColorData(this.props.value);
         const inputBackgroundColor = colorData.backgroudColor;
         const inputTextColor = colorData.textColor;
-        return (
-            <div>
-                <input
-                    id={this.props.id}
-                    type='text'
-                    className='form-control'
-                    value={inputBackgroundColor || ''}
-                    required={this.props.required}
-                    readOnly={this.props.readonly}
-                    onChange={(event) => {debugger;}}
-                    onClick={this.handleClick}
-                    style={{
-                        backgroundColor: inputBackgroundColor,
-                        color: inputTextColor,
-                        cursor: 'pointer',
-                    }}
-                    autoComplete='off'
-                />
-                { this.state.displayColorPicker ? (
-                    <div className='overlay'>
-                        <div className='overlay-background-layer' onClick={ this.handleClose }/>
-                        <div className='overlay-body'>
-                            <SketchPicker
-                                color={ inputBackgroundColor || '#fff' }
-                                onChangeComplete={ this.handleChange }
-                                width={400}
-                            />
-                        </div>
-                    </div>
-                ) : null }
-            </div>
-        );
+        return [
+            <input
+                id={this.props.id}
+                key={this.props.id}
+                type='text'
+                className='form-control'
+                value={inputBackgroundColor || ''}
+                required={this.props.required}
+                readOnly={this.props.readonly}
+                onClick={this.handleClick}
+                style={{
+                    backgroundColor: inputBackgroundColor,
+                    color: inputTextColor,
+                    cursor: 'pointer',
+                }}
+                autoComplete='off'
+            />,
+            <ColorPicker
+                enable={this.state.displayColorPicker}
+                color={inputBackgroundColor || '#fff'}
+                onChange={this.handleChange}
+                onClose={this.handleClose}
+                key={`color-picker-overlay-${this.props.id}`}
+            />
+        ];
     };
 };
 

@@ -1,9 +1,29 @@
 import React from 'react';
-import { dataURItoBlob, shouldRender } from './utils';
+import { Buffer } from 'buffer';
+import { shouldRender } from './utils';
 
 
-function addNameToDataURL(dataURL, name) {
-    return dataURL.replace(';base64', `;name=${name};base64`);
+// const HTML_COMMENT_REGEX = /<!--[\s\S]*?(?:-->)?<!---+>?|<!(?![dD][oO][cC][tT][yY][pP][eE]|\[CDATA\[)[^>]*>?|<[?][^>]*>?/g;
+const HTML_COMMENT_REGEX = /<!--[\s\S]*?-->/g;
+const SVG_REGEX = /^\s*(?:<\?xml[^>]*>\s*)?(?:<!doctype svg[^>]*\s*(?:\[?(?:\s*<![^>]*>\s*)*\]?)*[^>]*>\s*)?<svg[^>]*>[^]*<\/svg>\s*$/i;
+
+
+function isBinary(buf) {
+    const isBuf = Buffer.isBuffer(buf);
+    for (let i = 0; i < 24; i++) {
+        const charCode = isBuf ? buf[i] : buf.charCodeAt(i);
+        if (charCode === 65533 || charCode <= 8) return true;
+    }
+    return false;
+};
+
+
+function isSVG(data) {
+    return (
+        Boolean(data) &&
+        !isBinary(data) &&
+        SVG_REGEX.test(data.toString().replace(HTML_COMMENT_REGEX, ''))
+    );
 };
 
 
@@ -11,13 +31,13 @@ function processFile(file) {
     return new Promise((resolve, reject) => {
         const reader = new window.FileReader();
         reader.onerror = reject;
-        reader.onload = (event) => resolve({
-            dataURL: addNameToDataURL(event.target.result, file.name),
-            name: file.name,
-            size: file.size,
-            type: file.type
-        });
-        reader.readAsDataURL(file);
+        reader.onload = (event) => {
+            const data = event.target.result;
+            if (isSVG(data)) return resolve(data);
+            alert('ERROR: Invalid file format!\nThere must be only an SVG file.')
+            return resolve(null);
+        };
+        reader.readAsText(file);
     });
 };
 
@@ -27,24 +47,40 @@ function processFiles(files) {
 };
 
 
-function extractFileInfo(dataURLs) {
-    return dataURLs.filter(
-        dataURL => typeof dataURL !== 'undefined'
-    ).map(dataURL => {
-        const { blob, name } = dataURItoBlob(dataURL);
-        return { name, size: blob.size, type: blob.type };
-    });
+function checkFileContent(values) {
+    return values.filter(data => isSVG(data));
 };
 
 
-const FilesInfo = ({ filesInfo }) => {
-    if (!filesInfo.length) return null;
+function filesPreview(value) {
+    let values = [];
+    if (Array.isArray(value)) {
+        if (!value.length) return <IconPreviewTemplate/>
+        values = value;
+    } else {
+        if (!value) return <IconPreviewTemplate/>;
+        values = [value];
+    }
+    values = checkFileContent(values);
+    if (!values.length) return <IconPreviewTemplate/>;
+    return values.map((svg, i) => <IconPreviewTemplate key={i} content={svg}/>);
+};
+
+
+const IconPreviewTemplate = ({ content }) => {
+    if (content) {
+        return (
+            <div
+                className='d-inline-block align-middle svg-preview border border-secondary rounded p-1 mr-2'
+                dangerouslySetInnerHTML={{__html: content || null}}
+            />
+        );
+    }
     return (
-        <ul className='mt-2 mb-2'>
-            {filesInfo.map(({ name, size, type }, i) => (
-                <li key={i}><b>{name}</b> ({type}, {size} bytes)</li>
-            ))}
-        </ul>
+        <div
+            className='d-inline-block align-middle svg-preview border border-secondary rounded p-1 mr-2'>
+            <i className='icon-camera'/>
+        </div>
     );
 };
 
@@ -52,9 +88,6 @@ const FilesInfo = ({ filesInfo }) => {
 class CustomFileWidget extends React.Component {
     constructor(props) {
         super(props);
-        const { value } = this.props;
-        const values = Array.isArray(value) ? value : [value];
-        this.state = { values, filesInfo: extractFileInfo(values) };
         this.handleChange = this.handleChange.bind(this);
     };
 
@@ -64,30 +97,41 @@ class CustomFileWidget extends React.Component {
 
     handleChange(event) {
         const { onChange, multiple } = this.props;
-        processFiles(event.target.files).then(filesInfo => {
-            this.setState({
-                filesInfo,
-                values: filesInfo.map(fileInfo => fileInfo.dataURL),
-            }, () => onChange(multiple ? this.state.values : this.state.values[0]));
+        processFiles(event.target.files).then(filesContent => {
+            const values = filesContent.filter(data => Boolean(data));
+            if (values.length > 0) onChange(multiple ? values : values[0]);
         });
+        event.target.value = '';
     };
 
     render() {
-        const { multiple, id, readonly, disabled, autofocus, required } = this.props;
-        const { filesInfo } = this.state;
+        const { multiple, id, readonly, disabled, autofocus, required, value } = this.props;
         return (
             <div>
-                <input
-                    id={id}
-                    type='file'
-                    onChange={this.handleChange}
-                    autoFocus={autofocus}
-                    multiple={multiple}
-                    disabled={readonly || disabled}
-                    required={required}
-                    accept='.svg'
-                />
-                <FilesInfo filesInfo={filesInfo}/>
+                {filesPreview(value)}
+                <span className='btn btn-sm btn-info' style={{ overflow: 'hidden', position: 'relative' }}>
+                    Open file
+                    <input
+                        id={id}
+                        type='file'
+                        onChange={this.handleChange}
+                        value=''
+                        autoFocus={autofocus}
+                        multiple={multiple}
+                        disabled={readonly || disabled}
+                        required={required}
+                        accept='.svg'
+                        style={{
+                            position: 'absolute',
+                            left: 0,
+                            top: 0,
+                            lineHeight: '1000px',
+                            opacity: 0,
+                            width: '1000px',
+                            cursor: 'pointer'
+                        }}
+                    />
+                </span>
             </div>
         );
     };

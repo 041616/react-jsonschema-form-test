@@ -35,10 +35,8 @@ function createDefaultConfig(initFormData) {
 
 const widgets = { CustomColorWidget, CustomFileWidget };
 
-const isConfirmed = () => confirm(
-    'WARNING: current configuration data will be erased! \n' +
-    'Would you like to continue?'
-);
+
+const isConfirmed = () => confirm('WARNING: current configuration data will be erased!\nWould you like to continue?');
 
 
 class SchemaForm extends React.Component {
@@ -52,7 +50,6 @@ class SchemaForm extends React.Component {
             isFormBlank: true,
         };
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
-        this.handleFormChange = this.handleFormChange.bind(this);
         this.handleCreateConfigClick = this.handleCreateConfigClick.bind(this);
         this.handleConfigLoad = this.handleConfigLoad.bind(this);
     }
@@ -82,12 +79,6 @@ class SchemaForm extends React.Component {
         }
     }
 
-    handleFormChange(data) {
-        debugger;
-        data.formData = this.state.formData;
-        return data
-    }
-
     handleCreateConfigClick() {
         if (isConfirmed()) {
             this.setState({
@@ -110,24 +101,23 @@ class SchemaForm extends React.Component {
                 showErrorList={false}
                 widgets={widgets}
                 onSubmit={this.handleFormSubmit}
-                onChange={this.handleFormChange}
                 noHtml5Validate={true}
                 formData={formData}
             >
                 <div className='fixed-top pt-2 pb-2 bg-white shadow-sm'>
                     <div className='container'>
                         <button type='submit' className='btn btn-sm btn-info'>
-                            {isFormBlank ? 'Create' : 'Validate & Save' }
+                            {isFormBlank ? 'Generate' : 'Save' }
                         </button>
                         <LoadButton
-                            className='btn btn-sm btn-info ml-2'
+                            className='btn btn-sm btn-outline-primary ml-2'
                             onLoad={this.handleConfigLoad}
                             shouldLoad={isConfirmed}
                         >Open</LoadButton>
                         {!isFormBlank ? (
                             <button
                                 type='button'
-                                className='btn btn-sm btn-info ml-2'
+                                className='btn btn-sm btn-outline-primary ml-2'
                                 onClick={this.handleCreateConfigClick}
                             >Create new config</button>
                         ) : null}
