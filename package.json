@@ -2,7 +2,7 @@
   "name": "react-jsonschema-form-test",
   "version": "1.0.0",
   "description": "Testing react-jsonschema-form - simple `React` component capable of building HTML forms out of a JSON schema and using `Bootstrap` semantics by default.",
-  "main": "",
+  "main": "public/js/schema.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -w --progress",

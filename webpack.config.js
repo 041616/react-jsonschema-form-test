@@ -3,11 +3,12 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        'index': __dirname + '/source/index.js'
+        'index': path.join(__dirname, '/source/index.js'),
+        'schema': path.join(__dirname, '/source/Schema/index.js')
     },
     output: {
-        path: __dirname + '/build/',
-        filename: '[name].js',
+        path: path.join(__dirname, '/public/'),
+        filename: 'js/[name].js',
     },
     module: {
         rules: [{
