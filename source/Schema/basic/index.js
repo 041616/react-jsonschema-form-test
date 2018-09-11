@@ -9,7 +9,7 @@ import linkHoverColor from './properties/link-hover-color';
 const properties = Object.assign({}, backgroundColor, textColor, fontFamily, linkColor, linkHoverColor);
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
-const propertyName = 'styles';
+const propertyName = 'basic';
 
 
 export default {

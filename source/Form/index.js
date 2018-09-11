@@ -2,35 +2,23 @@ import React from 'react';
 import Form from 'react-jsonschema-form';
 import { saveAs } from 'file-saver/FileSaver';
 import { schema } from 'Schema';
-import primarySchema from 'Schema/styles';
+import primarySchema from 'Schema/basic';
 import { CustomFileWidget } from './components/widgets/CustomFileWidget';
 import { CustomColorWidget } from './components/widgets/CustomColorWidget';
 import { FieldTemplate } from './components/fields/FieldTemplate';
 import { ObjectFieldTemplate } from './components/fields/ObjectFieldTemplate';
 import { ErrorListTemplate } from './components/ErrorListTemplate';
 import { LoadButton } from './components/LoadConfigButton';
+import defaultFormData from '../Defaults';
 
 
-const initFormData = {
-    backgroundColor: '#fefefe',
-    textColor: '#333',
-    fontFamily: 'Arial, Helvetica, sans-serif',
-    linkColor: '#1a0dab',
-    linkHoverColor: '#1a0dab',
-}
-
-
-function createDefaultConfig(initFormData) {
-    return {
-        styles: {
-            backgroundColor: initFormData.backgroundColor,
-            textColor: initFormData.textColor,
-            fontFamily: initFormData.fontFamily,
-            linkColor: initFormData.linkColor,
-            linkHoverColor: initFormData.linkHoverColor,
-        }
-    }
-};
+// const initFormData = {
+//     backgroundColor: '#fefefe',
+//     textColor: '#333',
+//     fontFamily: 'Arial, Helvetica, sans-serif',
+//     linkColor: '#125285',
+//     linkHoverColor: '#4686BB',
+// }
 
 
 const widgets = { CustomColorWidget, CustomFileWidget };
@@ -66,7 +54,7 @@ class SchemaForm extends React.Component {
         if (this.state.isFormBlank) {
             this.setState({
                 formSchema: schema,
-                formData: createDefaultConfig(data.formData),
+                formData: defaultFormData(data.formData),
                 isFormBlank: false,
             });
         } else {
