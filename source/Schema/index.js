@@ -1,9 +1,9 @@
 import { getKeyValues } from './utils';
-import styles from './styles';
-import components from './components';
+import basic from './basic';
+import buyButton from './components/buy-button';
 
 
-const properties = Object.assign({}, styles, components);
+const properties = Object.assign({}, basic, buyButton);
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
 

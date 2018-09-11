@@ -86,6 +86,78 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./source/Schema/basic/index.js":
+/*!**************************************!*\
+  !*** ./source/Schema/basic/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_background_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/background-color */ \"./source/Schema/basic/properties/background-color.js\");\n/* harmony import */ var _properties_text_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/text-color */ \"./source/Schema/basic/properties/text-color.js\");\n/* harmony import */ var _properties_font_family__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/font-family */ \"./source/Schema/basic/properties/font-family.js\");\n/* harmony import */ var _properties_link_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/link-color */ \"./source/Schema/basic/properties/link-color.js\");\n/* harmony import */ var _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/link-hover-color */ \"./source/Schema/basic/properties/link-hover-color.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _properties_background_color__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_text_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_font_family__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_link_color__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\nvar propertyName = 'basic';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, {\n    type: 'object',\n    title: propertyName,\n    description: 'Basic design styles',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/basic/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/basic/properties/background-color.js":
+/*!************************************************************!*\
+  !*** ./source/Schema/basic/properties/background-color.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic background color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/basic/properties/background-color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/basic/properties/font-family.js":
+/*!*******************************************************!*\
+  !*** ./source/Schema/basic/properties/font-family.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'fontFamily';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic font-family of the desing'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].font)));\n\n//# sourceURL=webpack:///./source/Schema/basic/properties/font-family.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/basic/properties/link-color.js":
+/*!******************************************************!*\
+  !*** ./source/Schema/basic/properties/link-color.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic link color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/basic/properties/link-color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/basic/properties/link-hover-color.js":
+/*!************************************************************!*\
+  !*** ./source/Schema/basic/properties/link-hover-color.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic link hover color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/basic/properties/link-hover-color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/basic/properties/text-color.js":
+/*!******************************************************!*\
+  !*** ./source/Schema/basic/properties/text-color.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic text color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/basic/properties/text-color.js?");
+
+/***/ }),
+
 /***/ "./source/Schema/components/buy-button/index.js":
 /*!******************************************************!*\
   !*** ./source/Schema/components/buy-button/index.js ***!
@@ -94,7 +166,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/buy-button/properties/icon/index.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/buy-button/properties/color.js\");\n/* harmony import */ var _properties_hover_color__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/hover-color */ \"./source/Schema/components/buy-button/properties/hover-color.js\");\n/* harmony import */ var _properties_background_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/background-color */ \"./source/Schema/components/buy-button/properties/background-color.js\");\n/* harmony import */ var _properties_background_hover_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/background-hover-color */ \"./source/Schema/components/buy-button/properties/background-hover-color.js\");\n/* harmony import */ var _properties_font_family__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/font-family */ \"./source/Schema/components/buy-button/properties/font-family.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_hover_color__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_background_color__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_background_hover_color__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_font_family__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\nvar propertyName = 'buyButton';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, {\n    type: 'object',\n    title: propertyName,\n    description: 'Buy button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/buy-button/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/buy-button/properties/icon/index.js\");\n/* harmony import */ var _properties_text_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/text-color */ \"./source/Schema/components/buy-button/properties/text-color.js\");\n/* harmony import */ var _properties_text_hover_color__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/text-hover-color */ \"./source/Schema/components/buy-button/properties/text-hover-color.js\");\n/* harmony import */ var _properties_background_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/background-color */ \"./source/Schema/components/buy-button/properties/background-color.js\");\n/* harmony import */ var _properties_background_hover_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/background-hover-color */ \"./source/Schema/components/buy-button/properties/background-hover-color.js\");\n/* harmony import */ var _properties_font_family__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/font-family */ \"./source/Schema/components/buy-button/properties/font-family.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_text_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_text_hover_color__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_background_color__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_background_hover_color__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_font_family__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\nvar propertyName = 'buyButton';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, {\n    type: 'object',\n    title: propertyName,\n    description: 'Buy button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/buy-button/index.js?");
 
 /***/ }),
 
@@ -122,18 +194,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 /***/ }),
 
-/***/ "./source/Schema/components/buy-button/properties/color.js":
-/*!*****************************************************************!*\
-  !*** ./source/Schema/components/buy-button/properties/color.js ***!
-  \*****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: '\"Buy\" button text color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/buy-button/properties/color.js?");
-
-/***/ }),
-
 /***/ "./source/Schema/components/buy-button/properties/font-family.js":
 /*!***********************************************************************!*\
   !*** ./source/Schema/components/buy-button/properties/font-family.js ***!
@@ -143,18 +203,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'fontFamily';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: '\"Buy\" button font family'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].font)));\n\n//# sourceURL=webpack:///./source/Schema/components/buy-button/properties/font-family.js?");
-
-/***/ }),
-
-/***/ "./source/Schema/components/buy-button/properties/hover-color.js":
-/*!***********************************************************************!*\
-  !*** ./source/Schema/components/buy-button/properties/hover-color.js ***!
-  \***********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'textHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: '\"Buy\" button text hover color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/buy-button/properties/hover-color.js?");
 
 /***/ }),
 
@@ -206,15 +254,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 /***/ }),
 
-/***/ "./source/Schema/components/index.js":
-/*!*******************************************!*\
-  !*** ./source/Schema/components/index.js ***!
-  \*******************************************/
+/***/ "./source/Schema/components/buy-button/properties/text-color.js":
+/*!**********************************************************************!*\
+  !*** ./source/Schema/components/buy-button/properties/text-color.js ***!
+  \**********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _buy_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buy-button */ \"./source/Schema/components/buy-button/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar properties = Object.assign({}, _buy_button__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\nvar propertyName = 'components';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, {\n    type: 'object',\n    title: propertyName,\n    description: 'Design components',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: '\"Buy\" button text color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/buy-button/properties/text-color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/buy-button/properties/text-hover-color.js":
+/*!****************************************************************************!*\
+  !*** ./source/Schema/components/buy-button/properties/text-hover-color.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'textHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: '\"Buy\" button text hover color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/buy-button/properties/text-hover-color.js?");
 
 /***/ }),
 
@@ -274,79 +334,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"schema\", function() { return schema; });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ \"./source/Schema/styles/index.js\");\n/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components */ \"./source/Schema/components/index.js\");\n\n\n\n\nvar properties = Object.assign({}, _styles__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _components__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\nvar schema = {\n    type: 'object',\n    description: 'Design settings',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n};\n\n//# sourceURL=webpack:///./source/Schema/index.js?");
-
-/***/ }),
-
-/***/ "./source/Schema/styles/index.js":
-/*!***************************************!*\
-  !*** ./source/Schema/styles/index.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_background_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/background-color */ \"./source/Schema/styles/properties/background-color.js\");\n/* harmony import */ var _properties_text_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/text-color */ \"./source/Schema/styles/properties/text-color.js\");\n/* harmony import */ var _properties_font_family__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/font-family */ \"./source/Schema/styles/properties/font-family.js\");\n/* harmony import */ var _properties_link_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/link-color */ \"./source/Schema/styles/properties/link-color.js\");\n/* harmony import */ var _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/link-hover-color */ \"./source/Schema/styles/properties/link-hover-color.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _properties_background_color__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_text_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_font_family__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_link_color__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\nvar propertyName = 'styles';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, {\n    type: 'object',\n    title: propertyName,\n    description: 'Basic design styles',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/styles/index.js?");
-
-/***/ }),
-
-/***/ "./source/Schema/styles/properties/background-color.js":
-/*!*************************************************************!*\
-  !*** ./source/Schema/styles/properties/background-color.js ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic background color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/styles/properties/background-color.js?");
-
-/***/ }),
-
-/***/ "./source/Schema/styles/properties/font-family.js":
-/*!********************************************************!*\
-  !*** ./source/Schema/styles/properties/font-family.js ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'fontFamily';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic font-family of the desing'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].font)));\n\n//# sourceURL=webpack:///./source/Schema/styles/properties/font-family.js?");
-
-/***/ }),
-
-/***/ "./source/Schema/styles/properties/link-color.js":
-/*!*******************************************************!*\
-  !*** ./source/Schema/styles/properties/link-color.js ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic link color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/styles/properties/link-color.js?");
-
-/***/ }),
-
-/***/ "./source/Schema/styles/properties/link-hover-color.js":
-/*!*************************************************************!*\
-  !*** ./source/Schema/styles/properties/link-hover-color.js ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic link hover color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/styles/properties/link-hover-color.js?");
-
-/***/ }),
-
-/***/ "./source/Schema/styles/properties/text-color.js":
-/*!*******************************************************!*\
-  !*** ./source/Schema/styles/properties/text-color.js ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic text color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/styles/properties/text-color.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"schema\", function() { return schema; });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./basic */ \"./source/Schema/basic/index.js\");\n/* harmony import */ var _components_buy_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/buy-button */ \"./source/Schema/components/buy-button/index.js\");\n\n\n\n\nvar properties = Object.assign({}, _basic__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _components_buy_button__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\nvar schema = {\n    type: 'object',\n    description: 'Design settings',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n};\n\n//# sourceURL=webpack:///./source/Schema/index.js?");
 
 /***/ }),
 
