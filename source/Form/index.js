@@ -61,7 +61,7 @@ class SchemaForm extends React.Component {
             const stringifiedFormData = JSON.stringify(data.formData, null, '  ');
             const blob = new Blob(
                 [stringifiedFormData],
-                { type: `text/plain;charset=${document.characterSet}` }
+                { type: `application/json;charset=${document.characterSet}` }
             );
             saveAs(blob, 'design-settings.json');
         }
