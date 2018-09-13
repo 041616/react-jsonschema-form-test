@@ -5,3 +5,4 @@ node_modules/
 
 # files
 npm-debug.log
+public/js/index.js

@@ -89,11 +89,12 @@ class CustomFileWidget extends React.Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
-    };
+        this.handleReset = this.handleReset.bind(this);
+    }
 
     shouldComponentUpdate(nextProps, nextState) {
         return shouldRender(this, nextProps, nextState);
-    };
+    }
 
     handleChange(event) {
         const { onChange, multiple } = this.props;
@@ -102,7 +103,11 @@ class CustomFileWidget extends React.Component {
             if (values.length > 0) onChange(multiple ? values : values[0]);
         });
         event.target.value = '';
-    };
+    }
+
+    handleReset() {
+        this.props.onChange('');
+    }
 
     render() {
         const { multiple, id, readonly, disabled, autofocus, required, value } = this.props;
@@ -132,9 +137,14 @@ class CustomFileWidget extends React.Component {
                         }}
                     />
                 </span>
+                <button
+                    type='button'
+                    className='btn btn-sm btn-outline-primary ml-2'
+                    onClick={this.handleReset}
+                >Reset</button>
             </div>
         );
-    };
+    }
 };
 
 

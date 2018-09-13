@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_background_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/background-color */ \"./source/Schema/basic/properties/background-color.js\");\n/* harmony import */ var _properties_text_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/text-color */ \"./source/Schema/basic/properties/text-color.js\");\n/* harmony import */ var _properties_font_family__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/font-family */ \"./source/Schema/basic/properties/font-family.js\");\n/* harmony import */ var _properties_link_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/link-color */ \"./source/Schema/basic/properties/link-color.js\");\n/* harmony import */ var _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/link-hover-color */ \"./source/Schema/basic/properties/link-hover-color.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _properties_background_color__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_text_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_font_family__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_link_color__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\nvar propertyName = 'basic';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, {\n    type: 'object',\n    title: propertyName,\n    description: 'Basic design styles',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/basic/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_background_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/background-color */ \"./source/Schema/basic/properties/background-color.js\");\n/* harmony import */ var _properties_text_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/text-color */ \"./source/Schema/basic/properties/text-color.js\");\n/* harmony import */ var _properties_font_family__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/font-family */ \"./source/Schema/basic/properties/font-family.js\");\n/* harmony import */ var _properties_link_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/link-color */ \"./source/Schema/basic/properties/link-color.js\");\n/* harmony import */ var _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/link-hover-color */ \"./source/Schema/basic/properties/link-hover-color.js\");\n/* harmony import */ var _properties_external_font_family__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/external-font-family */ \"./source/Schema/basic/properties/external-font-family.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\nfunction getRequired(properties) {\n    var propertyKeys = Object.keys(properties);\n    var excludedPropertyKeys = [Object.keys(_properties_external_font_family__WEBPACK_IMPORTED_MODULE_6__[\"default\"])[0]];\n    return propertyKeys.filter(function (propertyKey) {\n        return !excludedPropertyKeys.includes(propertyKey);\n    });\n};\n\nvar properties = Object.assign({}, _properties_background_color__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_text_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_link_color__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_link_hover_color__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_font_family__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_external_font_family__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\nvar required = getRequired(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\nvar propertyName = 'basic';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, {\n    type: 'object',\n    title: propertyName,\n    description: 'Basic design styles',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/basic/index.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Basic background color of the design'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/basic/properties/background-color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/basic/properties/external-font-family.js":
+/*!****************************************************************!*\
+  !*** ./source/Schema/basic/properties/external-font-family.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'externalFontFamily';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'URL for Google Fonts (see https://fonts.google.com/)'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].url)));\n\n//# sourceURL=webpack:///./source/Schema/basic/properties/external-font-family.js?");
 
 /***/ }),
 
@@ -298,7 +310,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    type: 'string',\n    ui: {\n        'ui:widget': 'CustomFileWidget',\n        'ui:help': 'The file must be in SVG format'\n    }\n});\n\n//# sourceURL=webpack:///./source/Schema/definitions/file.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    type: 'string',\n    default: '',\n    ui: {\n        'ui:widget': 'CustomFileWidget',\n        'ui:help': 'The file must be in SVG format'\n    }\n});\n\n//# sourceURL=webpack:///./source/Schema/definitions/file.js?");
 
 /***/ }),
 
@@ -322,7 +334,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./color */ \"./source/Schema/definitions/color.js\");\n/* harmony import */ var _font__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./font */ \"./source/Schema/definitions/font.js\");\n/* harmony import */ var _file__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./file */ \"./source/Schema/definitions/file.js\");\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({ font: _font__WEBPACK_IMPORTED_MODULE_1__[\"default\"], file: _file__WEBPACK_IMPORTED_MODULE_2__[\"default\"], color: _color__WEBPACK_IMPORTED_MODULE_0__[\"default\"] });\n\n//# sourceURL=webpack:///./source/Schema/definitions/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./color */ \"./source/Schema/definitions/color.js\");\n/* harmony import */ var _font__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./font */ \"./source/Schema/definitions/font.js\");\n/* harmony import */ var _file__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./file */ \"./source/Schema/definitions/file.js\");\n/* harmony import */ var _url__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./url */ \"./source/Schema/definitions/url.js\");\n\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({ font: _font__WEBPACK_IMPORTED_MODULE_1__[\"default\"], file: _file__WEBPACK_IMPORTED_MODULE_2__[\"default\"], color: _color__WEBPACK_IMPORTED_MODULE_0__[\"default\"], url: _url__WEBPACK_IMPORTED_MODULE_3__[\"default\"] });\n\n//# sourceURL=webpack:///./source/Schema/definitions/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/definitions/url.js":
+/*!******************************************!*\
+  !*** ./source/Schema/definitions/url.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    type: 'string',\n    format: 'uri',\n    pattern: '^(https?|wss?|ftp)://',\n    ui: {\n        'ui:help': 'External resource URL',\n        'ui:placeholder': 'https://'\n    }\n});\n\n//# sourceURL=webpack:///./source/Schema/definitions/url.js?");
 
 /***/ }),
 

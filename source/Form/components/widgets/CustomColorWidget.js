@@ -2,6 +2,9 @@ import React from 'react';
 import { SketchPicker } from 'react-color';
 
 
+const ESC_KEY_CODE = 27;
+
+
 function isColorDark(r, g, b, a) {
     // per ITU-R BT.709
     return (0.2126*r + 0.7152*g + 0.0722*b + 0.5*a) < 140 && a > 0.4;
@@ -66,10 +69,16 @@ class CustomColorWidget extends React.Component {
         this.handleClick = this.handleClick.bind(this);
         this.handleClose = this.handleClose.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
+    }
+
+    componentDidMount(){
+        document.addEventListener('keydown', this.handleKeyDown, false);
     }
 
     componentWillUnmount() {
         document.body.style.overflow = null;
+        document.removeEventListener('keydown', this.handleKeyDown, false);
     }
 
     handleClick() {
@@ -81,6 +90,14 @@ class CustomColorWidget extends React.Component {
     handleClose() {
         document.body.style.overflow = null;
         this.setState({ displayColorPicker: false });
+    }
+
+    handleKeyDown(event) {
+        const shouldCloseColorPicker = (
+            this.state.displayColorPicker &&
+            event.keyCode === ESC_KEY_CODE
+        );
+        if (shouldCloseColorPicker) this.handleClose();
     }
 
     handleChange(color) {

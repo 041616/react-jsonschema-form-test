@@ -1,11 +1,27 @@
-import Color from 'color';
+import chroma from 'chroma-js';
+
+
+function colorInstanceToString(color) {
+    return color.alpha() < 1 ? color.css() : color.hex();
+};
 
 
 function setBuyButtonBackgroundColor(basic) {
-    const color = Color(basic.textColor).lighten(0.795);
-    return color.alfa < 1 ?
-        color.rgb().string().toLowerCase() :
-        color.hex().toLowerCase();
+    const color = chroma(basic.textColor).brighten(15 * 0.06);
+    return colorInstanceToString(color);
+};
+
+
+function setBuyButtonBackgroundHoverColor(basic) {
+    const color = chroma(basic.textColor).brighten(30 * 0.06);
+    return colorInstanceToString(color);
+};
+
+
+function setBasicLinkHoverColor(basic) {
+    if (basic.linkHoverColor) return basic.linkHoverColor;
+    const color = chroma(basic.linkColor).brighten(20 * 0.06);
+    return colorInstanceToString(color);
 };
 
 
@@ -16,7 +32,7 @@ export default function(initFormData) {
             textColor: initFormData.textColor,
             fontFamily: initFormData.fontFamily,
             linkColor: initFormData.linkColor,
-            linkHoverColor: initFormData.linkHoverColor,
+            linkHoverColor: setBasicLinkHoverColor(initFormData),
         },
         buyButton: {
             icon: {
@@ -27,7 +43,7 @@ export default function(initFormData) {
             textColor: initFormData.backgroundColor,
             textHoverColor: initFormData.backgroundColor,
             backgroundColor: setBuyButtonBackgroundColor(initFormData),
-            backgroundHoverColor: initFormData.textColor,
+            backgroundHoverColor: setBuyButtonBackgroundHoverColor(initFormData),
             fontFamily: initFormData.fontFamily,
         },
     }
