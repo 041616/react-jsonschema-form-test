@@ -5,7 +5,8 @@
   "main": "public/js/schema.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "dev": "webpack --progress",
+    "prod": "webpack --progress --mode='production'"
   },
   "keywords": [],
   "author": "o.tarasov",
@@ -19,14 +20,21 @@
   },
   "homepage": "https://github.com/041616/react-jsonschema-form-test",
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
     "eslint": "^5.4.0",
     "eslint-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.0",
+    "sugarss": "^2.0.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
   },

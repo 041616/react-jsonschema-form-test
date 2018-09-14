@@ -6,3 +6,4 @@ node_modules/
 # files
 npm-debug.log
 public/js/index.js
+public/css/index.css

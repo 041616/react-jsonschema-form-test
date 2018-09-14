@@ -1,50 +1,22 @@
 import React from 'react';
 import { SketchPicker } from 'react-color';
+import chroma from 'chroma-js';
+import css from './styles.sss';
 
 
 const ESC_KEY_CODE = 27;
-
-
-function isColorDark(r, g, b, a) {
-    // per ITU-R BT.709
-    return (0.2126*r + 0.7152*g + 0.0722*b + 0.5*a) < 140 && a > 0.4;
-};
-
-
-function isHexColor(color) {
-    return /^#([A-Fa-f0-9]{3}){1,2}$/.test(color);
-};
-
-
-function isRGBAColor(color) {
-    return /^rgb\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3}\s*\)$|^rgba\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3},\s*(0|1|(0?.\d+))\s*\)$/.test(color);
-};
-
-
-function extractRGBA(color) {
-    if (isRGBAColor(color)) {
-        const c = color.substring(color.indexOf('(') + 1, color.lastIndexOf(')')).split(/\s*,\s*/);
-        return c.length > 3 ? {
-            r: c[0], g: c[1], b: c[2], a: c[3]
-        } : {
-            r: c[0], g: c[1], b: c[2], a: 1
-        };
-    } else if (isHexColor(color)) {
-        let c = color.substring(1).split('');
-        if (c.length === 3) c = [c[0], c[0], c[1], c[1], c[2], c[2]];
-        c = `0x${c.join('')}`;
-        return { r: (c>>16)&255, g: (c>>8)&255, b: c&255, a: 1 };
-    }
-    throw new Error('[extractRGBA] invalid color value');
-};
+const COLOR_WHITE = '#fff';
+const COLOR_PICKER_WIDTH = 400;
 
 
 function getColorData(color) {
     if (!color) return { backgroudColor: null, textColor: null };
-    const { r, g, b, a } = color.rgb || extractRGBA(color);
+    const chromaColor = color.rgb ?
+        chroma([color.rgb.r, color.rgb.g, color.rgb.b, color.rgb.a]) :
+        chroma(color);
     return {
-        backgroudColor: a < 1 ? `rgba(${r}, ${g}, ${b}, ${a})` : color.hex || color,
-        textColor: isColorDark(r, g, b, a) ? '#fff' : null,
+        backgroudColor: chromaColor.alpha() < 1 ? chromaColor.css() : chromaColor.hex(),
+        textColor: chromaColor.luminance() < 0.55 ? COLOR_WHITE : null,
     };
 };
 
@@ -52,10 +24,14 @@ function getColorData(color) {
 const ColorPicker = ({ enable, color, onChange, onClose }) => {
     if (!enable) return null;
     return (
-        <div className='overlay'>
-            <div className='overlay-background-layer' onClick={onClose}/>
-            <div className='overlay-body'>
-                <SketchPicker color={color} onChangeComplete={onChange} width={400}/>
+        <div className={css.overlay}>
+            <div className={css['overlay-background-layer']} onClick={onClose}/>
+            <div className={css['overlay-body']}>
+                <SketchPicker
+                    color={color}
+                    onChangeComplete={onChange}
+                    width={COLOR_PICKER_WIDTH}
+                />
             </div>
         </div>
     );
@@ -113,7 +89,7 @@ class CustomColorWidget extends React.Component {
                 id={this.props.id}
                 key={this.props.id}
                 type='text'
-                className='form-control'
+                className={`form-control ${css['form-control']}`}
                 value={inputBackgroundColor || ''}
                 required={this.props.required}
                 readOnly={this.props.readonly}
@@ -121,13 +97,12 @@ class CustomColorWidget extends React.Component {
                 style={{
                     backgroundColor: inputBackgroundColor,
                     color: inputTextColor,
-                    cursor: 'pointer',
                 }}
                 autoComplete='off'
             />,
             <ColorPicker
                 enable={this.state.displayColorPicker}
-                color={inputBackgroundColor || '#fff'}
+                color={inputBackgroundColor || COLOR_WHITE}
                 onChange={this.handleChange}
                 onClose={this.handleClose}
                 key={`color-picker-overlay-${this.props.id}`}

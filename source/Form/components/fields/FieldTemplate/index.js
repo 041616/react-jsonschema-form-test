@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './styles.sss';
 
 
 const Description = ({ id, label, description, required }) => {
@@ -6,7 +7,7 @@ const Description = ({ id, label, description, required }) => {
     return (
         <div className='row'>
             <div className='col-md-auto'>
-                <label className='control-label font-weight-bold text-info tree-line' htmlFor={id}>
+                <label className={`control-label font-weight-bold text-info ${css['tree-line']}`} htmlFor={id}>
                     {label}
                     {required ? <span className='required text-danger'>*</span> : null}
                 </label>
@@ -33,7 +34,7 @@ const FieldTemplate = (props) => {
         <div className={classNames}>
             <Description {...props}/>
             {children}
-            <div className='help-block text-muted'>{rawHelp}</div>
+            <div className={`${css['help-block']} text-muted`}>{rawHelp}</div>
             <ErrorList errors={rawErrors}/>
         </div>
     );
