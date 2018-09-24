@@ -33,6 +33,7 @@ export default function(initFormData) {
             fontFamily: initFormData.fontFamily,
             linkColor: initFormData.linkColor,
             linkHoverColor: setBasicLinkHoverColor(initFormData),
+            externalFontFamily: initFormData.externalFontFamily,
         },
         buyButton: {
             icon: {
