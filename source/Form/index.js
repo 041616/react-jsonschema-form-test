@@ -2,23 +2,22 @@ import React from 'react';
 import Form from 'react-jsonschema-form';
 import { saveAs } from 'file-saver/FileSaver';
 import { schema } from 'Schema';
-import primarySchema from 'Schema/basic';
-import { CustomFileWidget } from './components/widgets/CustomFileWidget';
-import { CustomColorWidget } from './components/widgets/CustomColorWidget';
-import { FieldTemplate } from './components/fields/FieldTemplate';
-import { ObjectFieldTemplate } from './components/fields/ObjectFieldTemplate';
+import primarySchema from 'Schema/basic/basic';
+import { CustomFileWidget } from './components/widgets/CustomFileWidget/';
+import { CustomColorWidget } from './components/widgets/CustomColorWidget/';
+import { FieldTemplate } from './components/fields/FieldTemplate/';
+import { ObjectFieldTemplate } from './components/fields/ObjectFieldTemplate/';
 import { ErrorListTemplate } from './components/ErrorListTemplate';
 import { LoadButton } from './components/LoadConfigButton';
 import defaultFormData from '../Defaults';
 
 
-// const initFormData = {
-//     backgroundColor: '#fefefe',
-//     textColor: '#333',
-//     fontFamily: 'Arial, Helvetica, sans-serif',
-//     linkColor: '#125285',
-//     linkHoverColor: '#4686BB',
-// }
+const initFormData = {
+    backgroundColor: '#fefefe',
+    textColor: '#333',
+    fontFamily: 'Arial, Helvetica, sans-serif',
+    linkColor: '#000',
+}
 
 
 const widgets = { CustomColorWidget, CustomFileWidget };
@@ -30,11 +29,9 @@ const isConfirmed = () => confirm('WARNING: current configuration data will be e
 class SchemaForm extends React.Component {
     constructor(props) {
         super(props);
-        this.initSchema = primarySchema[Object.keys(primarySchema)[0]];
-        delete this.initSchema.title;
         this.state = {
-            formSchema: this.initSchema,
-            formData: {},
+            formSchema: primarySchema,
+            formData: initFormData,
             isFormBlank: true,
         };
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -70,8 +67,8 @@ class SchemaForm extends React.Component {
     handleCreateConfigClick() {
         if (isConfirmed()) {
             this.setState({
-                formSchema: this.initSchema,
-                formData: {},
+                formSchema: primarySchema,
+                formData: initFormData,
                 isFormBlank: true,
             });
         }

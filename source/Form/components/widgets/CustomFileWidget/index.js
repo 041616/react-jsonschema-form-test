@@ -1,6 +1,7 @@
 import React from 'react';
 import { Buffer } from 'buffer';
 import { shouldRender } from './utils';
+import css from './styles.sss';
 
 
 // const HTML_COMMENT_REGEX = /<!--[\s\S]*?(?:-->)?<!---+>?|<!(?![dD][oO][cC][tT][yY][pP][eE]|\[CDATA\[)[^>]*>?|<[?][^>]*>?/g;
@@ -68,18 +69,21 @@ function filesPreview(value) {
 
 
 const IconPreviewTemplate = ({ content }) => {
+    const className = [
+        'd-inline-block', 'align-middle', 'border', 'border-secondary',
+        'rounded', 'p-1', 'mr-2', css['svg-preview']
+    ].join(' ');
     if (content) {
         return (
             <div
-                className='d-inline-block align-middle svg-preview border border-secondary rounded p-1 mr-2'
+                className={className}
                 dangerouslySetInnerHTML={{__html: content || null}}
             />
         );
     }
     return (
-        <div
-            className='d-inline-block align-middle svg-preview border border-secondary rounded p-1 mr-2'>
-            <i className='icon-camera'/>
+        <div className={className}>
+            <i className={css['icon-camera']}/>
         </div>
     );
 };
@@ -89,11 +93,13 @@ class CustomFileWidget extends React.Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
-    };
+        this.handleReset = this.handleReset.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+    }
 
     shouldComponentUpdate(nextProps, nextState) {
         return shouldRender(this, nextProps, nextState);
-    };
+    }
 
     handleChange(event) {
         const { onChange, multiple } = this.props;
@@ -102,39 +108,47 @@ class CustomFileWidget extends React.Component {
             if (values.length > 0) onChange(multiple ? values : values[0]);
         });
         event.target.value = '';
-    };
+    }
+
+    handleReset() {
+        this.props.onChange('');
+    }
+
+    handleClick() {
+        this.inputElement.click();
+    }
 
     render() {
         const { multiple, id, readonly, disabled, autofocus, required, value } = this.props;
         return (
             <div>
                 {filesPreview(value)}
-                <span className='btn btn-sm btn-info' style={{ overflow: 'hidden', position: 'relative' }}>
-                    Open file
-                    <input
-                        id={id}
-                        type='file'
-                        onChange={this.handleChange}
-                        value=''
-                        autoFocus={autofocus}
-                        multiple={multiple}
-                        disabled={readonly || disabled}
-                        required={required}
-                        accept='.svg'
-                        style={{
-                            position: 'absolute',
-                            left: 0,
-                            top: 0,
-                            lineHeight: '1000px',
-                            opacity: 0,
-                            width: '1000px',
-                            cursor: 'pointer'
-                        }}
-                    />
-                </span>
+                <input
+                    id={id}
+                    type='file'
+                    onChange={this.handleChange}
+                    value=''
+                    autoFocus={autofocus}
+                    multiple={multiple}
+                    disabled={readonly || disabled}
+                    required={required}
+                    accept='.svg'
+                    style={{ display: 'none' }}
+                    ref={input => this.inputElement = input}
+                />
+                <button
+                    type='button'
+                    className='btn btn-sm btn-info'
+                    onClick={this.handleClick}
+                >Open file</button>
+                <button
+                    type='button'
+                    className='btn btn-sm btn-outline-primary ml-2'
+                    onClick={this.handleReset}
+                >Reset</button>
             </div>
         );
-    };
+    }
 };
 
 
