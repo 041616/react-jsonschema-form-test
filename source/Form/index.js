@@ -12,14 +12,6 @@ import { LoadButton } from './components/LoadConfigButton';
 import defaultFormData from '../Defaults';
 
 
-const initFormData = {
-    backgroundColor: '#fefefe',
-    textColor: '#333',
-    fontFamily: 'Arial, Helvetica, sans-serif',
-    linkColor: '#000',
-}
-
-
 const widgets = { CustomColorWidget, CustomFileWidget };
 
 
@@ -31,7 +23,7 @@ class SchemaForm extends React.Component {
         super(props);
         this.state = {
             formSchema: primarySchema,
-            formData: initFormData,
+            formData: {},
             isFormBlank: true,
         };
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -68,7 +60,7 @@ class SchemaForm extends React.Component {
         if (isConfirmed()) {
             this.setState({
                 formSchema: primarySchema,
-                formData: initFormData,
+                formData: {},
                 isFormBlank: true,
             });
         }
