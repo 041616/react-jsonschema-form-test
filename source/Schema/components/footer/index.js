@@ -1,5 +1,8 @@
 import { getKeyValues } from 'Schema/utils';
 import backgroundColor from './properties/backgroundColor';
+import textColor from './properties/textColor';
+import linkColor from './properties/linkColor';
+import linkHoverColor from './properties/linkHoverColor';
 
 
 const NAME = 'footer';
@@ -7,7 +10,10 @@ const NAME = 'footer';
 
 const properties = Object.assign(
     {},
-    backgroundColor
+    textColor,
+    backgroundColor,
+    linkColor,
+    linkHoverColor,
 );
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);

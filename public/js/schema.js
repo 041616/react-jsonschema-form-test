@@ -466,7 +466,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/footer/properties/backgroundColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'footer';\n\nvar properties = Object.assign({}, _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Footer is a bottom part of the website with contact info, copyrights etc',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/footer/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/footer/properties/backgroundColor.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/footer/properties/textColor.js\");\n/* harmony import */ var _properties_linkColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/linkColor */ \"./source/Schema/components/footer/properties/linkColor.js\");\n/* harmony import */ var _properties_linkHoverColor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/linkHoverColor */ \"./source/Schema/components/footer/properties/linkHoverColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\nvar NAME = 'footer';\n\nvar properties = Object.assign({}, _properties_textColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_linkColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_linkHoverColor__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Footer is a bottom part of the website with contact info, copyrights etc',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/footer/index.js?");
 
 /***/ }),
 
@@ -479,6 +479,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Footer background color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/footer/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/footer/properties/linkColor.js":
+/*!*****************************************************************!*\
+  !*** ./source/Schema/components/footer/properties/linkColor.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Color of the links inside footer'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/footer/properties/linkColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/footer/properties/linkHoverColor.js":
+/*!**********************************************************************!*\
+  !*** ./source/Schema/components/footer/properties/linkHoverColor.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Hover color of the links inside footer'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/footer/properties/linkHoverColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/footer/properties/textColor.js":
+/*!*****************************************************************!*\
+  !*** ./source/Schema/components/footer/properties/textColor.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Footer text color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/footer/properties/textColor.js?");
 
 /***/ }),
 

@@ -1,5 +1,12 @@
-export function generateFooterData({ footer }) {
+import { getTextColor } from 'tinycolor';
+
+
+export function generateFooterData({ basic, footer }) {
+    const backgroundColor = footer.backgroundColor;
+    const textColor = getTextColor(backgroundColor, basic.textColor);
     return {
-        backgroundColor: footer.backgroundColor,
-    }
+        textColor, backgroundColor,
+        linkColor: textColor,
+        linkHoverColor: basic.linkHoverColor
+    };
 };
