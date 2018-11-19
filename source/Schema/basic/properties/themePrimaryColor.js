@@ -1,12 +1,12 @@
 import definitions from 'Schema/definitions';
 
 
-const propertyName = 'textColor';
+const propertyName = 'themePrimaryColor';
 
 
 export default {
     [propertyName]: Object.assign({
         title: propertyName,
-        description: '"Buy" button text color',
+        description: 'Primary theme color of the design',
     }, definitions.color)
 };

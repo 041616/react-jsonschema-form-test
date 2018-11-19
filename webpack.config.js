@@ -5,7 +5,6 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 
 module.exports = {
-    stats: 'minimal',
     mode: 'development',
     entry: {
         'index': path.join(__dirname, '/source/index.js'),
@@ -49,13 +48,13 @@ module.exports = {
     externals : {
         react: 'React',
         'react-dom': 'ReactDOM',
-        // 'prop-types': 'PropTypes',
     },
     resolve: {
         modules: ['node_modules'],
         extensions: ['.js', '.jsx'],
         alias: {
             Schema: path.resolve(__dirname, 'source/Schema/'),
+            tinycolor: path.resolve(__dirname, 'tinycolor/'),
         },
     },
     plugins: [

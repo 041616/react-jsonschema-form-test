@@ -5,8 +5,8 @@
   "main": "public/js/schema.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --progress",
-    "prod": "webpack --progress --mode='production'"
+    "webpack": "webpack --progress",
+    "build": "webpack --progress --mode='production'"
   },
   "keywords": [],
   "author": "o.tarasov",
@@ -39,9 +39,9 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "chroma-js": "^1.3.7",
     "file-saver": "^1.3.8",
     "react-color": "^2.14.1",
-    "react-jsonschema-form": "1"
+    "react-jsonschema-form": "1",
+    "tinycolor2": "^1.4.1"
   }
 }

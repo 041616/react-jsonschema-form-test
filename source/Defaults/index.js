@@ -1,51 +1,71 @@
-import chroma from 'chroma-js';
-
-
-function colorInstanceToString(color) {
-    return color.alpha() < 1 ? color.css() : color.hex();
-};
-
-
-function setBuyButtonBackgroundColor(basic) {
-    const color = chroma(basic.textColor).brighten(15 * 0.06);
-    return colorInstanceToString(color);
-};
-
-
-function setBuyButtonBackgroundHoverColor(basic) {
-    const color = chroma(basic.textColor).brighten(30 * 0.06);
-    return colorInstanceToString(color);
-};
-
-
-function setBasicLinkHoverColor(basic) {
-    if (basic.linkHoverColor) return basic.linkHoverColor;
-    const color = chroma(basic.linkColor).brighten(20 * 0.06);
-    return colorInstanceToString(color);
-};
+import { generatePromoPanelData } from './components/promoPanel';
+import { generateBuyButtonData } from './components/buyButton';
+import { generateHeaderData } from './components/header';
+import { generateSidebarData } from './components/sidebar';
+import { generateHorizontalMenuData } from './components/horizontalMenu';
+import { generateVerticalMenuData } from './components/verticalMenu';
+import { generateCatalogItemData } from './components/catalogItem';
+import { generateFooterData } from './components/footer';
 
 
 export default function(initFormData) {
+    const { basic } = initFormData;
     return {
         basic: {
-            backgroundColor: initFormData.backgroundColor,
-            textColor: initFormData.textColor,
-            fontFamily: initFormData.fontFamily,
-            linkColor: initFormData.linkColor,
-            linkHoverColor: setBasicLinkHoverColor(initFormData),
-            externalFontFamily: initFormData.externalFontFamily,
+            externalFontFamily: basic.externalFontFamily,
+            fontFamily: basic.fontFamily,
+            themePrimaryColor: basic.themePrimaryColor,
+            themeSecondaryColor: basic.themeSecondaryColor,
+            backgroundColor: basic.backgroundColor,
+            textColor: basic.textColor,
+            linkColor: basic.linkColor,
+            linkHoverColor: basic.linkHoverColor,
         },
-        buyButton: {
-            icon: {
-                file: '',
-                color: initFormData.backgroundColor,
-                hoverColor: initFormData.backgroundColor,
-            },
-            textColor: initFormData.backgroundColor,
-            textHoverColor: initFormData.backgroundColor,
-            backgroundColor: setBuyButtonBackgroundColor(initFormData),
-            backgroundHoverColor: setBuyButtonBackgroundHoverColor(initFormData),
-            fontFamily: initFormData.fontFamily,
-        },
-    }
+        promoPanel: generatePromoPanelData(initFormData),
+        buyButton: generateBuyButtonData(initFormData),
+        header: generateHeaderData(initFormData),
+        sidebar: generateSidebarData(initFormData),
+        horizontalMenu: generateHorizontalMenuData(initFormData),
+        verticalMenu: generateVerticalMenuData(initFormData),
+        catalogItem: generateCatalogItemData(initFormData),
+        footer: generateFooterData(initFormData),
+    };
+};
+
+
+export const initFormData = {
+    basic: {
+        externalFontFamily: 'https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&amp;subset=cyrillic',
+        fontFamily: 'Ubuntu, sans-serif',
+        themePrimaryColor: '#35A4A9',
+        themeSecondaryColor: '#3882BF',
+        backgroundColor: '#DFDCE3',
+        textColor: '#333',
+        linkColor: '#3882BF',
+        linkHoverColor: '#2F619D',
+    },
+    promoPanel: {
+        backgroundColor: '#3882BF',
+    },
+    buyButton: {
+        backgroundColor: '#5E4DC7',
+    },
+    header: {
+        backgroundColor: '#F2F1F3',
+    },
+    sidebar: {
+        backgroundColor: '#FFF',
+    },
+    horizontalMenu: {
+        backgroundColor: '#FFF',
+    },
+    verticalMenu: {
+        backgroundColor: '#FFF',
+    },
+    catalogItem: {
+        backgroundColor: '#FFF',
+    },
+    footer: {
+        backgroundColor: '#333',
+    },
 };

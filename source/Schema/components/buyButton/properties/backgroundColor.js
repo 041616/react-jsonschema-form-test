@@ -1,12 +1,12 @@
 import definitions from 'Schema/definitions';
 
 
-const propertyName = 'backgroundColor';
+const NAME = 'backgroundColor';
 
 
 export default {
-    [propertyName]: Object.assign({
-        title: propertyName,
+    [NAME]: Object.assign({
+        title: NAME,
         description: '"Buy" button background color',
     }, definitions.color)
 };

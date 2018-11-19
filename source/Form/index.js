@@ -2,22 +2,14 @@ import React from 'react';
 import Form from 'react-jsonschema-form';
 import { saveAs } from 'file-saver/FileSaver';
 import { schema } from 'Schema';
-import primarySchema from 'Schema/basic/basic';
+import initSchema from 'Schema/init';
 import { CustomFileWidget } from './components/widgets/CustomFileWidget/';
 import { CustomColorWidget } from './components/widgets/CustomColorWidget/';
 import { FieldTemplate } from './components/fields/FieldTemplate/';
 import { ObjectFieldTemplate } from './components/fields/ObjectFieldTemplate/';
 import { ErrorListTemplate } from './components/ErrorListTemplate';
 import { LoadButton } from './components/LoadConfigButton';
-import defaultFormData from '../Defaults';
-
-
-const initFormData = {
-    backgroundColor: '#fefefe',
-    textColor: '#333',
-    fontFamily: 'Arial, Helvetica, sans-serif',
-    linkColor: '#000',
-}
+import defaultFormData, { initFormData } from '../Defaults';
 
 
 const widgets = { CustomColorWidget, CustomFileWidget };
@@ -30,7 +22,7 @@ class SchemaForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            formSchema: primarySchema,
+            formSchema: initSchema,
             formData: initFormData,
             isFormBlank: true,
         };
@@ -67,7 +59,7 @@ class SchemaForm extends React.Component {
     handleCreateConfigClick() {
         if (isConfirmed()) {
             this.setState({
-                formSchema: primarySchema,
+                formSchema: initSchema,
                 formData: initFormData,
                 isFormBlank: true,
             });

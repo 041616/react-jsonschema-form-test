@@ -1,12 +1,12 @@
 import definitions from 'Schema/definitions';
 
 
-const propertyName = 'fontFamily';
+const NAME = 'fontFamily';
 
 
 export default {
-    [propertyName]: Object.assign({
-        title: propertyName,
+    [NAME]: Object.assign({
+        title: NAME,
         description: '"Buy" button font family',
     }, definitions.font)
 };

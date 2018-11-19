@@ -1,4 +1,4 @@
-function getKeyValues(key, obj) {
+export function getKeyValues(key, obj) {
     const result = {};
     if (obj.constructor !== Object) return result;
     Object.keys(obj).forEach((k) => {
@@ -10,4 +10,8 @@ function getKeyValues(key, obj) {
 };
 
 
-export { getKeyValues };
+export function getRequiredPropertyKeys(propertyKeys, excludedPropertyKeys) {
+    return propertyKeys.filter(
+        propertyKey => !excludedPropertyKeys.includes(propertyKey)
+    );
+};
