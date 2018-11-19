@@ -5540,7 +5540,7 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateBuyButtonData\", function() { return generateBuyButtonData; });\n/* harmony import */ var tinycolor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tinycolor */ \"./tinycolor/index.js\");\n\n\nfunction generateBuyButtonData(_ref) {\n    var basic = _ref.basic,\n        buyButton = _ref.buyButton;\n\n    var backgroundColor = buyButton.backgroundColor;\n    var backgroundHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getColor\"])(backgroundColor, backgroundColor, 5);\n    var backgroundActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(backgroundColor).relativelyDesaturate(50).toText();\n    var fontFamily = basic.fontFamily;\n    var textColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundColor, basic.textColor);\n    var textHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundHoverColor, basic.textColor);\n    var textActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundActiveColor, basic.textColor);\n    var icon = {\n        file: '',\n        color: textColor,\n        hoverColor: textHoverColor\n    };\n    var iconActive = {\n        file: '',\n        color: textActiveColor,\n        hoverColor: textActiveColor\n    };\n\n    return {\n        icon: icon, textColor: textColor, textHoverColor: textHoverColor, backgroundColor: backgroundColor, backgroundHoverColor: backgroundHoverColor,\n        iconActive: iconActive, textActiveColor: textActiveColor, backgroundActiveColor: backgroundActiveColor, fontFamily: fontFamily\n    };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/buyButton.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateBuyButtonData\", function() { return generateBuyButtonData; });\n/* harmony import */ var tinycolor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tinycolor */ \"./tinycolor/index.js\");\n\n\nfunction generateBuyButtonData(_ref) {\n    var basic = _ref.basic,\n        buyButton = _ref.buyButton;\n\n    var backgroundColor = buyButton.backgroundColor;\n    var backgroundHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getColor\"])(backgroundColor, backgroundColor, 5);\n    var backgroundActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(backgroundColor).relativelyDesaturate(50).toText();\n    var fontFamily = basic.fontFamily;\n    var textColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundColor, basic.textColor);\n    var textHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundHoverColor, basic.textColor);\n    var textActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundActiveColor, basic.textColor);\n    var icon = {\n        file: '',\n        color: textColor,\n        hoverColor: textHoverColor\n    };\n    var iconActive = {\n        file: '',\n        color: textActiveColor,\n        hoverColor: textActiveColor\n    };\n    var iconContactUs = {\n        file: '',\n        color: textColor,\n        hoverColor: textHoverColor\n    };\n\n    return {\n        icon: icon, textColor: textColor, textHoverColor: textHoverColor, backgroundColor: backgroundColor, backgroundHoverColor: backgroundHoverColor,\n        iconActive: iconActive, textActiveColor: textActiveColor, backgroundActiveColor: backgroundActiveColor, iconContactUs: iconContactUs, fontFamily: fontFamily\n    };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/buyButton.js?");
 
 /***/ }),
 
@@ -5600,7 +5600,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generatePromoPanelData\", function() { return generatePromoPanelData; });\nfunction generatePromoPanelData(_ref) {\n    var promoPanel = _ref.promoPanel;\n\n    return {\n        backgroundColor: promoPanel.backgroundColor\n    };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/promoPanel.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generatePromoPanelData\", function() { return generatePromoPanelData; });\n/* harmony import */ var tinycolor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tinycolor */ \"./tinycolor/index.js\");\n\n\nfunction generatePromoPanelData(_ref) {\n    var basic = _ref.basic,\n        promoPanel = _ref.promoPanel;\n\n    var backgroundColor = promoPanel.backgroundColor;\n    var textColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundColor, basic.textColor);\n    var button = { borderColor: textColor, textColor: textColor, backgroundColor: backgroundColor };\n    return { backgroundColor: backgroundColor, textColor: textColor, button: button };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/promoPanel.js?");
 
 /***/ }),
 
@@ -5896,7 +5896,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/buyButton/properties/icon/index.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/buyButton/properties/textColor.js\");\n/* harmony import */ var _properties_textHoverColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/textHoverColor */ \"./source/Schema/components/buyButton/properties/textHoverColor.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/buyButton/properties/backgroundColor.js\");\n/* harmony import */ var _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/backgroundHoverColor */ \"./source/Schema/components/buyButton/properties/backgroundHoverColor.js\");\n/* harmony import */ var _properties_fontFamily__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/fontFamily */ \"./source/Schema/components/buyButton/properties/fontFamily.js\");\n/* harmony import */ var _properties_iconActive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./properties/iconActive */ \"./source/Schema/components/buyButton/properties/iconActive/index.js\");\n/* harmony import */ var _properties_backgroundActiveColor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./properties/backgroundActiveColor */ \"./source/Schema/components/buyButton/properties/backgroundActiveColor.js\");\n/* harmony import */ var _properties_textActiveColor__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./properties/textActiveColor */ \"./source/Schema/components/buyButton/properties/textActiveColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\n\n\n\nvar NAME = 'buyButton';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_textColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_textHoverColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_fontFamily__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _properties_iconActive__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _properties_backgroundActiveColor__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _properties_textActiveColor__WEBPACK_IMPORTED_MODULE_9__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Buy button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/buyButton/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/buyButton/properties/icon/index.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/buyButton/properties/textColor.js\");\n/* harmony import */ var _properties_textHoverColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/textHoverColor */ \"./source/Schema/components/buyButton/properties/textHoverColor.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/buyButton/properties/backgroundColor.js\");\n/* harmony import */ var _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/backgroundHoverColor */ \"./source/Schema/components/buyButton/properties/backgroundHoverColor.js\");\n/* harmony import */ var _properties_fontFamily__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/fontFamily */ \"./source/Schema/components/buyButton/properties/fontFamily.js\");\n/* harmony import */ var _properties_iconActive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./properties/iconActive */ \"./source/Schema/components/buyButton/properties/iconActive/index.js\");\n/* harmony import */ var _properties_backgroundActiveColor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./properties/backgroundActiveColor */ \"./source/Schema/components/buyButton/properties/backgroundActiveColor.js\");\n/* harmony import */ var _properties_textActiveColor__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./properties/textActiveColor */ \"./source/Schema/components/buyButton/properties/textActiveColor.js\");\n/* harmony import */ var _properties_iconContactUs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./properties/iconContactUs */ \"./source/Schema/components/buyButton/properties/iconContactUs/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar NAME = 'buyButton';\n\nvar properties = Object.assign({}, _properties_fontFamily__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_textColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_textHoverColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_iconActive__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _properties_backgroundActiveColor__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _properties_textActiveColor__WEBPACK_IMPORTED_MODULE_9__[\"default\"], _properties_iconContactUs__WEBPACK_IMPORTED_MODULE_10__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Buy button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/buyButton/index.js?");
 
 /***/ }),
 
@@ -6044,6 +6044,54 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 /***/ }),
 
+/***/ "./source/Schema/components/buyButton/properties/iconContactUs/index.js":
+/*!******************************************************************************!*\
+  !*** ./source/Schema/components/buyButton/properties/iconContactUs/index.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/buyButton/properties/iconContactUs/properties/color.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/buyButton/properties/iconContactUs/properties/file.js\");\n/* harmony import */ var _properties_hoverColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/hoverColor */ \"./source/Schema/components/buyButton/properties/iconContactUs/properties/hoverColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'iconContactUs';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_hoverColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Contact us\" button icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/buyButton/properties/iconContactUs/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/buyButton/properties/iconContactUs/properties/color.js":
+/*!*****************************************************************************************!*\
+  !*** ./source/Schema/components/buyButton/properties/iconContactUs/properties/color.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: '\"Contact us\" button icon color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/buyButton/properties/iconContactUs/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/buyButton/properties/iconContactUs/properties/file.js":
+/*!****************************************************************************************!*\
+  !*** ./source/Schema/components/buyButton/properties/iconContactUs/properties/file.js ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon for \"contact us\" button'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/buyButton/properties/iconContactUs/properties/file.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/buyButton/properties/iconContactUs/properties/hoverColor.js":
+/*!**********************************************************************************************!*\
+  !*** ./source/Schema/components/buyButton/properties/iconContactUs/properties/hoverColor.js ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'hoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: '\"Contact us\" button icon hover color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/buyButton/properties/iconContactUs/properties/hoverColor.js?");
+
+/***/ }),
+
 /***/ "./source/Schema/components/buyButton/properties/textActiveColor.js":
 /*!**************************************************************************!*\
   !*** ./source/Schema/components/buyButton/properties/textActiveColor.js ***!
@@ -6184,7 +6232,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/promoPanel/properties/backgroundColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'promoPanel';\n\nvar properties = Object.assign({}, _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Promo panel',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/promoPanel/properties/backgroundColor.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/promoPanel/properties/textColor.js\");\n/* harmony import */ var _properties_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/button */ \"./source/Schema/components/promoPanel/properties/button/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'promoPanel';\n\nvar properties = Object.assign({}, _properties_textColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_button__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Promo panel',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/index.js?");
 
 /***/ }),
 
@@ -6197,6 +6245,66 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Promo panel background color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/promoPanel/properties/button/index.js":
+/*!************************************************************************!*\
+  !*** ./source/Schema/components/promoPanel/properties/button/index.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/promoPanel/properties/button/properties/backgroundColor.js\");\n/* harmony import */ var _properties_borderColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/borderColor */ \"./source/Schema/components/promoPanel/properties/button/properties/borderColor.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/promoPanel/properties/button/properties/textColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'button';\n\nvar properties = Object.assign({}, _properties_textColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_borderColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Promo panel button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/properties/button/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/promoPanel/properties/button/properties/backgroundColor.js":
+/*!*********************************************************************************************!*\
+  !*** ./source/Schema/components/promoPanel/properties/button/properties/backgroundColor.js ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Background color of the promo panel button'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/properties/button/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/promoPanel/properties/button/properties/borderColor.js":
+/*!*****************************************************************************************!*\
+  !*** ./source/Schema/components/promoPanel/properties/button/properties/borderColor.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'borderColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Border color of the promo panel button'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/properties/button/properties/borderColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/promoPanel/properties/button/properties/textColor.js":
+/*!***************************************************************************************!*\
+  !*** ./source/Schema/components/promoPanel/properties/button/properties/textColor.js ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Text color of the promo panel button'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/properties/button/properties/textColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/promoPanel/properties/textColor.js":
+/*!*********************************************************************!*\
+  !*** ./source/Schema/components/promoPanel/properties/textColor.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Promo panel text color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/promoPanel/properties/textColor.js?");
 
 /***/ }),
 

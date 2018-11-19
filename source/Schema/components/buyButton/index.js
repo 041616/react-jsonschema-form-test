@@ -8,6 +8,7 @@ import fontFamily from './properties/fontFamily';
 import iconActive from './properties/iconActive';
 import backgroundActiveColor from './properties/backgroundActiveColor';
 import textActiveColor from './properties/textActiveColor';
+import iconContactUs from './properties/iconContactUs';
 
 
 const NAME = 'buyButton';
@@ -15,15 +16,16 @@ const NAME = 'buyButton';
 
 const properties = Object.assign(
     {},
+    fontFamily,
     icon,
     textColor,
     textHoverColor,
     backgroundColor,
     backgroundHoverColor,
-    fontFamily,
     iconActive,
     backgroundActiveColor,
     textActiveColor,
+    iconContactUs,
 );
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);

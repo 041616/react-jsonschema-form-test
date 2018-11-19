@@ -19,9 +19,14 @@ export function generateBuyButtonData({ basic, buyButton }) {
         color: textActiveColor,
         hoverColor: textActiveColor,
     };
+    const iconContactUs = {
+        file: '',
+        color: textColor,
+        hoverColor: textHoverColor,
+    };
 
     return {
         icon, textColor, textHoverColor, backgroundColor, backgroundHoverColor,
-        iconActive, textActiveColor, backgroundActiveColor, fontFamily,
+        iconActive, textActiveColor, backgroundActiveColor, iconContactUs, fontFamily,
     }
 };
