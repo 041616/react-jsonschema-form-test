@@ -1,5 +1,6 @@
 import { getKeyValues } from 'Schema/utils';
 import backgroundColor from './properties/backgroundColor';
+import textColor from './properties/textColor';
 
 
 const NAME = 'horizontalMenu';
@@ -7,7 +8,8 @@ const NAME = 'horizontalMenu';
 
 const properties = Object.assign(
     {},
-    backgroundColor
+    textColor,
+    backgroundColor,
 );
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
