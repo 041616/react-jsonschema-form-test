@@ -5540,7 +5540,7 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateBuyButtonData\", function() { return generateBuyButtonData; });\n/* harmony import */ var tinycolor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tinycolor */ \"./tinycolor/index.js\");\n\n\nfunction generateBuyButtonData(_ref) {\n    var basic = _ref.basic,\n        buyButton = _ref.buyButton;\n\n    var backgroundColor = buyButton.backgroundColor;\n    var backgroundHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getColor\"])(backgroundColor, backgroundColor, 5);\n    var backgroundActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(backgroundColor).relativelyDesaturate(50).toText();\n    var fontFamily = basic.fontFamily;\n    var textColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundColor, basic.textColor);\n    var textHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundHoverColor, basic.textColor);\n    var textActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundActiveColor, basic.textColor);\n    var icon = {\n        file: '',\n        color: textColor,\n        hoverColor: textHoverColor\n    };\n    var iconActive = {\n        file: '',\n        color: textActiveColor,\n        hoverColor: textActiveColor\n    };\n    var iconContactUs = {\n        file: '',\n        color: textColor,\n        hoverColor: textHoverColor\n    };\n\n    return {\n        icon: icon, textColor: textColor, textHoverColor: textHoverColor, backgroundColor: backgroundColor, backgroundHoverColor: backgroundHoverColor,\n        iconActive: iconActive, textActiveColor: textActiveColor, backgroundActiveColor: backgroundActiveColor, iconContactUs: iconContactUs, fontFamily: fontFamily\n    };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/buyButton.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateBuyButtonData\", function() { return generateBuyButtonData; });\n/* harmony import */ var tinycolor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tinycolor */ \"./tinycolor/index.js\");\n\n\nfunction generateBuyButtonData(_ref) {\n    var basic = _ref.basic,\n        buyButton = _ref.buyButton;\n\n    var backgroundColor = buyButton.backgroundColor;\n    var backgroundHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getColor\"])(backgroundColor, backgroundColor, 5);\n    var backgroundActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(backgroundColor).relativelyDesaturate(50).toText();\n    var fontFamily = basic.fontFamily;\n    var textColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundColor, basic.textColor);\n    var textHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundHoverColor, basic.textColor);\n    var textActiveColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundActiveColor, basic.textColor);\n    var icon = {\n        file: '',\n        color: textColor,\n        hoverColor: textHoverColor\n    };\n    var iconActive = {\n        file: '',\n        color: textActiveColor,\n        hoverColor: textActiveColor\n    };\n    var iconContactUs = {\n        file: '',\n        color: textColor,\n        hoverColor: textHoverColor\n    };\n    return {\n        icon: icon, textColor: textColor, textHoverColor: textHoverColor, backgroundColor: backgroundColor, backgroundHoverColor: backgroundHoverColor,\n        iconActive: iconActive, textActiveColor: textActiveColor, backgroundActiveColor: backgroundActiveColor, iconContactUs: iconContactUs, fontFamily: fontFamily\n    };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/buyButton.js?");
 
 /***/ }),
 
@@ -5612,7 +5612,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateSidebarData\", function() { return generateSidebarData; });\nfunction generateSidebarData(_ref) {\n    var sidebar = _ref.sidebar;\n\n    return {\n        backgroundColor: sidebar.backgroundColor\n    };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/sidebar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateSidebarData\", function() { return generateSidebarData; });\n/* harmony import */ var tinycolor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tinycolor */ \"./tinycolor/index.js\");\n\n\nfunction generateSidebarData(_ref) {\n    var basic = _ref.basic,\n        sidebar = _ref.sidebar;\n\n    var backgroundColor = sidebar.backgroundColor;\n    var textColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundColor, basic.textColor);\n    var linkColor = basic.linkColor;\n    var linkHoverColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getColor\"])(backgroundColor, linkColor, 5);\n    var title = { textColor: textColor, backgroundColor: backgroundColor, fontFamily: basic.fontFamily };\n    return { backgroundColor: backgroundColor, textColor: textColor, linkColor: linkColor, linkHoverColor: linkHoverColor, title: title };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/sidebar.js?");
 
 /***/ }),
 
@@ -6328,7 +6328,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/sidebar/properties/backgroundColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'sidebar';\n\nvar properties = Object.assign({}, _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Sidebar is a left|right part of the website',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/sidebar/properties/backgroundColor.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/sidebar/properties/textColor.js\");\n/* harmony import */ var _properties_linkColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/linkColor */ \"./source/Schema/components/sidebar/properties/linkColor.js\");\n/* harmony import */ var _properties_linkHoverColor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/linkHoverColor */ \"./source/Schema/components/sidebar/properties/linkHoverColor.js\");\n/* harmony import */ var _properties_title__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/title */ \"./source/Schema/components/sidebar/properties/title/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\nvar NAME = 'sidebar';\n\nvar properties = Object.assign({}, _properties_textColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_linkColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_linkHoverColor__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_title__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Sidebar is a left|right part of the website',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/index.js?");
 
 /***/ }),
 
@@ -6341,6 +6341,90 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Sidebar background color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/sidebar/properties/linkColor.js":
+/*!******************************************************************!*\
+  !*** ./source/Schema/components/sidebar/properties/linkColor.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Color of the links inside sidebar'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/linkColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/sidebar/properties/linkHoverColor.js":
+/*!***********************************************************************!*\
+  !*** ./source/Schema/components/sidebar/properties/linkHoverColor.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'linkHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Hover color of the links inside sidebar'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/linkHoverColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/sidebar/properties/textColor.js":
+/*!******************************************************************!*\
+  !*** ./source/Schema/components/sidebar/properties/textColor.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Sidebar text color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/textColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/sidebar/properties/title/index.js":
+/*!********************************************************************!*\
+  !*** ./source/Schema/components/sidebar/properties/title/index.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/sidebar/properties/title/properties/backgroundColor.js\");\n/* harmony import */ var _properties_fontFamily__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/fontFamily */ \"./source/Schema/components/sidebar/properties/title/properties/fontFamily.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/sidebar/properties/title/properties/textColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'title';\n\nvar properties = Object.assign({}, _properties_fontFamily__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_textColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Sidebar title',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/title/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/sidebar/properties/title/properties/backgroundColor.js":
+/*!*****************************************************************************************!*\
+  !*** ./source/Schema/components/sidebar/properties/title/properties/backgroundColor.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Background color of the sidebar title'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/title/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/sidebar/properties/title/properties/fontFamily.js":
+/*!************************************************************************************!*\
+  !*** ./source/Schema/components/sidebar/properties/title/properties/fontFamily.js ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'fontFamily';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Font family of the sidebar title'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].font)));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/title/properties/fontFamily.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/sidebar/properties/title/properties/textColor.js":
+/*!***********************************************************************************!*\
+  !*** ./source/Schema/components/sidebar/properties/title/properties/textColor.js ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar propertyName = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, propertyName, Object.assign({\n    title: propertyName,\n    description: 'Text color of the sidebar title'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/sidebar/properties/title/properties/textColor.js?");
 
 /***/ }),
 
