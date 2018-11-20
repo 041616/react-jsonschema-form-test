@@ -3,6 +3,7 @@ import basic from './basic';
 import promoPanel from './components/promoPanel';
 import buyButton from './components/buyButton';
 import header from './components/header';
+import slider from './components/slider';
 import sidebar from './components/sidebar';
 import horizontalMenu from './components/horizontalMenu';
 import verticalMenu from './components/verticalMenu';
@@ -16,6 +17,7 @@ const properties = Object.assign(
     promoPanel,
     buyButton,
     header,
+    slider,
     sidebar,
     horizontalMenu,
     verticalMenu,

@@ -6,6 +6,7 @@ import { generateHorizontalMenuData } from './components/horizontalMenu';
 import { generateVerticalMenuData } from './components/verticalMenu';
 import { generateCatalogItemData } from './components/catalogItem';
 import { generateFooterData } from './components/footer';
+import { generateSliderData } from './components/slider';
 
 
 export default function(initFormData) {
@@ -29,6 +30,7 @@ export default function(initFormData) {
         verticalMenu: generateVerticalMenuData(initFormData),
         catalogItem: generateCatalogItemData(initFormData),
         footer: generateFooterData(initFormData),
+        slider: generateSliderData(initFormData),
     };
 };
 

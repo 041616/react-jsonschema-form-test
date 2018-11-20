@@ -973,6 +973,222 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 /***/ }),
 
+/***/ "./source/Schema/components/slider/index.js":
+/*!**************************************************!*\
+  !*** ./source/Schema/components/slider/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/navigation */ \"./source/Schema/components/slider/properties/navigation/index.js\");\n/* harmony import */ var _properties_arrowPrev__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/arrowPrev */ \"./source/Schema/components/slider/properties/arrowPrev/index.js\");\n/* harmony import */ var _properties_arrowNext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/arrowNext */ \"./source/Schema/components/slider/properties/arrowNext/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'slider';\n\nvar properties = Object.assign({}, _properties_navigation__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_arrowPrev__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_arrowNext__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Website slider',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowNext/index.js":
+/*!***********************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowNext/index.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/slider/properties/arrowNext/properties/icon/index.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/slider/properties/arrowNext/properties/backgroundColor.js\");\n/* harmony import */ var _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/backgroundHoverColor */ \"./source/Schema/components/slider/properties/arrowNext/properties/backgroundHoverColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'arrowNext';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Next\" arrow',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowNext/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowNext/properties/backgroundColor.js":
+/*!********************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowNext/properties/backgroundColor.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Background color of the \"next\" arrow'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowNext/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowNext/properties/backgroundHoverColor.js":
+/*!*************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowNext/properties/backgroundHoverColor.js ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Background hover color of the \"next\" arrow'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowNext/properties/backgroundHoverColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowNext/properties/icon/index.js":
+/*!***************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowNext/properties/icon/index.js ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/file.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/color.js\");\n/* harmony import */ var _properties_hoverColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/hoverColor */ \"./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/hoverColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_hoverColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Next\" arrow icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowNext/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/color.js":
+/*!**************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/color.js ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon color of the \"next\" arrow'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/file.js":
+/*!*************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/file.js ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon for \"next\" arrow'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/file.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/hoverColor.js":
+/*!*******************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/hoverColor.js ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'hoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon hover color of the \"next\" arrow'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowNext/properties/icon/properties/hoverColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowPrev/index.js":
+/*!***********************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowPrev/index.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/slider/properties/arrowPrev/properties/icon/index.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/slider/properties/arrowPrev/properties/backgroundColor.js\");\n/* harmony import */ var _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/backgroundHoverColor */ \"./source/Schema/components/slider/properties/arrowPrev/properties/backgroundHoverColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'arrowPrev';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_backgroundHoverColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Previous\" arrow',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowPrev/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowPrev/properties/backgroundColor.js":
+/*!********************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowPrev/properties/backgroundColor.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Background color of the \"previous\" arrow'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowPrev/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowPrev/properties/backgroundHoverColor.js":
+/*!*************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowPrev/properties/backgroundHoverColor.js ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundHoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Background hover color of the \"previous\" arrow'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowPrev/properties/backgroundHoverColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowPrev/properties/icon/index.js":
+/*!***************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowPrev/properties/icon/index.js ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/file.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/color.js\");\n/* harmony import */ var _properties_hoverColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/hoverColor */ \"./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/hoverColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_hoverColor__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Previous\" arrow icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowPrev/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/color.js":
+/*!**************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/color.js ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon color of the \"previous\" arrow'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/file.js":
+/*!*************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/file.js ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon for \"previous\" arrow'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/file.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/hoverColor.js":
+/*!*******************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/hoverColor.js ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'hoverColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon hover color of the \"previous\" arrow'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/arrowPrev/properties/icon/properties/hoverColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/navigation/index.js":
+/*!************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/navigation/index.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/slider/properties/navigation/properties/backgroundColor.js\");\n/* harmony import */ var _properties_backgroundActiveColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/backgroundActiveColor */ \"./source/Schema/components/slider/properties/navigation/properties/backgroundActiveColor.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar NAME = 'navigation';\n\nvar properties = Object.assign({}, _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_backgroundActiveColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Slider navigation',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/navigation/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/navigation/properties/backgroundActiveColor.js":
+/*!***************************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/navigation/properties/backgroundActiveColor.js ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundActiveColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Slider navigation background color of the active item'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/navigation/properties/backgroundActiveColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/slider/properties/navigation/properties/backgroundColor.js":
+/*!*********************************************************************************************!*\
+  !*** ./source/Schema/components/slider/properties/navigation/properties/backgroundColor.js ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Slider navigation background color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/slider/properties/navigation/properties/backgroundColor.js?");
+
+/***/ }),
+
 /***/ "./source/Schema/components/verticalMenu/index.js":
 /*!********************************************************!*\
   !*** ./source/Schema/components/verticalMenu/index.js ***!
@@ -1077,7 +1293,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"schema\", function() { return schema; });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./basic */ \"./source/Schema/basic/index.js\");\n/* harmony import */ var _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/promoPanel */ \"./source/Schema/components/promoPanel/index.js\");\n/* harmony import */ var _components_buyButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/buyButton */ \"./source/Schema/components/buyButton/index.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/header */ \"./source/Schema/components/header/index.js\");\n/* harmony import */ var _components_sidebar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/sidebar */ \"./source/Schema/components/sidebar/index.js\");\n/* harmony import */ var _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/horizontalMenu */ \"./source/Schema/components/horizontalMenu/index.js\");\n/* harmony import */ var _components_verticalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/verticalMenu */ \"./source/Schema/components/verticalMenu/index.js\");\n/* harmony import */ var _components_catalogItem__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/catalogItem */ \"./source/Schema/components/catalogItem/index.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/footer */ \"./source/Schema/components/footer/index.js\");\n\n\n\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _basic__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _components_buyButton__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _components_header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _components_sidebar__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _components_verticalMenu__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _components_catalogItem__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _components_footer__WEBPACK_IMPORTED_MODULE_9__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\nvar schema = {\n    type: 'object',\n    description: 'Design settings',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n};\n\n//# sourceURL=webpack:///./source/Schema/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"schema\", function() { return schema; });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./basic */ \"./source/Schema/basic/index.js\");\n/* harmony import */ var _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/promoPanel */ \"./source/Schema/components/promoPanel/index.js\");\n/* harmony import */ var _components_buyButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/buyButton */ \"./source/Schema/components/buyButton/index.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/header */ \"./source/Schema/components/header/index.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/slider */ \"./source/Schema/components/slider/index.js\");\n/* harmony import */ var _components_sidebar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sidebar */ \"./source/Schema/components/sidebar/index.js\");\n/* harmony import */ var _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/horizontalMenu */ \"./source/Schema/components/horizontalMenu/index.js\");\n/* harmony import */ var _components_verticalMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/verticalMenu */ \"./source/Schema/components/verticalMenu/index.js\");\n/* harmony import */ var _components_catalogItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/catalogItem */ \"./source/Schema/components/catalogItem/index.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/footer */ \"./source/Schema/components/footer/index.js\");\n\n\n\n\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _basic__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _components_buyButton__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _components_header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _components_slider__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _components_sidebar__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _components_verticalMenu__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _components_catalogItem__WEBPACK_IMPORTED_MODULE_9__[\"default\"], _components_footer__WEBPACK_IMPORTED_MODULE_10__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\nvar schema = {\n    type: 'object',\n    description: 'Design settings',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n};\n\n//# sourceURL=webpack:///./source/Schema/index.js?");
 
 /***/ }),
 
