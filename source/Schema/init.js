@@ -14,26 +14,38 @@ import verticalMenu from 'Schema/components/verticalMenu';
 import verticalMenuBackgroundColor from 'Schema/components/verticalMenu/properties/backgroundColor';
 import catalogItem from 'Schema/components/catalogItem';
 import catalogItemBackgroundColor from 'Schema/components/catalogItem/properties/backgroundColor';
+import catalogItemStateAvailable from 'Schema/components/catalogItem/properties/stateAvailable';
+import catalogItemStateClarify from 'Schema/components/catalogItem/properties/stateClarify';
+import catalogItemStateOrder from 'Schema/components/catalogItem/properties/stateOrder';
 import footer from 'Schema/components/footer';
 import footerBackgroundColor from 'Schema/components/footer/properties/backgroundColor';
 
 
-function init(component, property) {
+function init(component, properties) {
     const initComponent = JSON.parse(JSON.stringify(component));
-    initComponent[Object.keys(component)[0]].properties = property;
-    initComponent[Object.keys(component)[0]].required = [Object.keys(property)[0]];
+    initComponent[Object.keys(component)[0]].properties = {};
+    initComponent[Object.keys(component)[0]].required = [];
+    properties.forEach((property) => {
+        Object.assign(initComponent[Object.keys(component)[0]].properties, property);
+        initComponent[Object.keys(component)[0]].required.push(Object.keys(property)[0]);
+    });
     return initComponent;
 };
 
 
-const initPromoPanel = init(promoPanel, promoPanelBackgroundColor);
-const initBuyButton = init(buyButton, buyButtonBackgroundColor);
-const initHeader = init(header, headerBackgroundColor);
-const initSidebar = init(sidebar, sidebarBackgroundColor);
-const initHorizontalMenu = init(horizontalMenu, horizontalMenuBackgroundColor);
-const initVerticalMenu = init(verticalMenu, verticalMenuBackgroundColor);
-const initCatalogItem = init(catalogItem, catalogItemBackgroundColor);
-const initFooter = init(footer, footerBackgroundColor);
+const initPromoPanel = init(promoPanel, [promoPanelBackgroundColor]);
+const initBuyButton = init(buyButton, [buyButtonBackgroundColor]);
+const initHeader = init(header, [headerBackgroundColor]);
+const initSidebar = init(sidebar, [sidebarBackgroundColor]);
+const initHorizontalMenu = init(horizontalMenu, [horizontalMenuBackgroundColor]);
+const initVerticalMenu = init(verticalMenu, [verticalMenuBackgroundColor]);
+const initCatalogItem = init(catalogItem, [
+    catalogItemBackgroundColor,
+    catalogItemStateAvailable,
+    catalogItemStateClarify,
+    catalogItemStateOrder,
+]);
+const initFooter = init(footer, [footerBackgroundColor]);
 
 
 const properties = Object.assign(

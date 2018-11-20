@@ -64,6 +64,15 @@ export const initFormData = {
     },
     catalogItem: {
         backgroundColor: '#FFF',
+        stateAvailable: {
+            textColor: '#009A00',
+        },
+        stateOrder: {
+            textColor: '#CC0A91',
+        },
+        stateClarify: {
+            textColor: '#C10000',
+        },
     },
     footer: {
         backgroundColor: '#333',
