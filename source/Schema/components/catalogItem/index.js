@@ -8,6 +8,7 @@ import stateAvailable from './properties/stateAvailable';
 import stateClarify from './properties/stateClarify';
 import stateOrder from './properties/stateOrder';
 import gift from './properties/gift';
+import timer from './properties/timer';
 
 
 const NAME = 'catalogItem';
@@ -24,6 +25,7 @@ const properties = Object.assign(
     stateClarify,
     stateOrder,
     gift,
+    timer,
 );
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);

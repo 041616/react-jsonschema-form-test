@@ -442,7 +442,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/catalogItem/properties/backgroundColor.js\");\n/* harmony import */ var _properties_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/title */ \"./source/Schema/components/catalogItem/properties/title/index.js\");\n/* harmony import */ var _properties_price__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/price */ \"./source/Schema/components/catalogItem/properties/price/index.js\");\n/* harmony import */ var _properties_oldPrice__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/oldPrice */ \"./source/Schema/components/catalogItem/properties/oldPrice/index.js\");\n/* harmony import */ var _properties_label__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/label */ \"./source/Schema/components/catalogItem/properties/label/index.js\");\n/* harmony import */ var _properties_stateAvailable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/stateAvailable */ \"./source/Schema/components/catalogItem/properties/stateAvailable/index.js\");\n/* harmony import */ var _properties_stateClarify__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./properties/stateClarify */ \"./source/Schema/components/catalogItem/properties/stateClarify/index.js\");\n/* harmony import */ var _properties_stateOrder__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./properties/stateOrder */ \"./source/Schema/components/catalogItem/properties/stateOrder/index.js\");\n/* harmony import */ var _properties_gift__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./properties/gift */ \"./source/Schema/components/catalogItem/properties/gift/index.js\");\n/* harmony import */ var _properties_gift__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_properties_gift__WEBPACK_IMPORTED_MODULE_9__);\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\n\n\n\nvar NAME = 'catalogItem';\n\nvar properties = Object.assign({}, _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_title__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_price__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_oldPrice__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_label__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_stateAvailable__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _properties_stateClarify__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _properties_stateOrder__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _properties_gift__WEBPACK_IMPORTED_MODULE_9___default.a);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Item of a product list',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/catalogItem/properties/backgroundColor.js\");\n/* harmony import */ var _properties_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/title */ \"./source/Schema/components/catalogItem/properties/title/index.js\");\n/* harmony import */ var _properties_price__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/price */ \"./source/Schema/components/catalogItem/properties/price/index.js\");\n/* harmony import */ var _properties_oldPrice__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/oldPrice */ \"./source/Schema/components/catalogItem/properties/oldPrice/index.js\");\n/* harmony import */ var _properties_label__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/label */ \"./source/Schema/components/catalogItem/properties/label/index.js\");\n/* harmony import */ var _properties_stateAvailable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/stateAvailable */ \"./source/Schema/components/catalogItem/properties/stateAvailable/index.js\");\n/* harmony import */ var _properties_stateClarify__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./properties/stateClarify */ \"./source/Schema/components/catalogItem/properties/stateClarify/index.js\");\n/* harmony import */ var _properties_stateOrder__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./properties/stateOrder */ \"./source/Schema/components/catalogItem/properties/stateOrder/index.js\");\n/* harmony import */ var _properties_gift__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./properties/gift */ \"./source/Schema/components/catalogItem/properties/gift/index.js\");\n/* harmony import */ var _properties_timer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./properties/timer */ \"./source/Schema/components/catalogItem/properties/timer/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar NAME = 'catalogItem';\n\nvar properties = Object.assign({}, _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_title__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_price__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _properties_oldPrice__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_label__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_stateAvailable__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _properties_stateClarify__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _properties_stateOrder__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _properties_gift__WEBPACK_IMPORTED_MODULE_9__[\"default\"], _properties_timer__WEBPACK_IMPORTED_MODULE_10__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Item of a product list',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/index.js?");
 
 /***/ }),
 
@@ -462,10 +462,47 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 /*!***********************************************************************!*\
   !*** ./source/Schema/components/catalogItem/properties/gift/index.js ***!
   \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/gift/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/catalogItem/properties/gift/properties/icon/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'gift';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Gift label of the product list item',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/gift/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/catalogItem/properties/gift/properties/icon/index.js":
+/*!***************************************************************************************!*\
+  !*** ./source/Schema/components/catalogItem/properties/gift/properties/icon/index.js ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/color.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/file.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Gift icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/gift/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/color.js":
+/*!**************************************************************************************************!*\
+  !*** ./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/color.js ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Gift icon color'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/file.js":
+/*!*************************************************************************************************!*\
+  !*** ./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/file.js ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon for product with gifts'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/gift/properties/icon/properties/file.js?");
 
 /***/ }),
 
@@ -622,6 +659,54 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Product \"under order\" indicator text color'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/stateOrder/properties/textColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/catalogItem/properties/timer/index.js":
+/*!************************************************************************!*\
+  !*** ./source/Schema/components/catalogItem/properties/timer/index.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/catalogItem/properties/timer/properties/icon/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'timer';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Timer label of the product list item',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/timer/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/catalogItem/properties/timer/properties/icon/index.js":
+/*!****************************************************************************************!*\
+  !*** ./source/Schema/components/catalogItem/properties/timer/properties/icon/index.js ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/color.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/file.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Timer icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/timer/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/color.js":
+/*!***************************************************************************************************!*\
+  !*** ./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/color.js ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Gift icon color'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/file.js":
+/*!**************************************************************************************************!*\
+  !*** ./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/file.js ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG icon for product with gifts'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/catalogItem/properties/timer/properties/icon/properties/file.js?");
 
 /***/ }),
 

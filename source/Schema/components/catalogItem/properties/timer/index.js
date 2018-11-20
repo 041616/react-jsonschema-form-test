@@ -1,12 +1,11 @@
 import { getKeyValues } from 'Schema/utils';
-import color from './properties/color';
-import file from './properties/file';
+import icon from './properties/icon';
 
 
-const NAME = 'icon';
+const NAME = 'timer';
 
 
-const properties = Object.assign({}, file, color);
+const properties = Object.assign({}, icon);
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
 
@@ -15,10 +14,10 @@ export default {
     [NAME]: {
         type: 'object',
         title: NAME,
-        description: 'Gift icon',
+        description: 'Timer label of the product list item',
         additionalProperties: false,
         required,
         properties,
         ui,
-    },
+    }
 };

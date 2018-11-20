@@ -15,7 +15,7 @@ export default {
     [NAME]: {
         type: 'object',
         title: NAME,
-        description: 'Gift icon',
+        description: 'Timer icon',
         additionalProperties: false,
         required,
         properties,

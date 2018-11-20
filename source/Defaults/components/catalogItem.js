@@ -16,8 +16,20 @@ export function generateCatalogItemData({ basic, catalogItem }) {
     const oldPrice = {
         textColor: tc(price.textColor).setAlpha(0.85).toText(),
     };
+    const gift = {
+        icon: {
+            file: '',
+            color: label.textColor,
+        },
+    };
+    const timer = {
+        icon: {
+            file: '',
+            color: label.textColor,
+        },
+    };
     return {
         backgroundColor, stateAvailable, stateOrder, stateClarify, title, label,
-        price, oldPrice,
+        price, oldPrice, gift, timer,
     };
 };
