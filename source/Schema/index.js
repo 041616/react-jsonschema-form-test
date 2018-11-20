@@ -10,6 +10,7 @@ import horizontalMenu from './components/horizontalMenu';
 import verticalMenu from './components/verticalMenu';
 import hamburgerMenu from './components/hamburgerMenu';
 import catalogItem from './components/catalogItem';
+import navigationLink from './components/navigationLink';
 import footer from './components/footer';
 
 
@@ -26,6 +27,7 @@ const properties = Object.assign(
     verticalMenu,
     hamburgerMenu,
     catalogItem,
+    navigationLink,
     footer,
 );
 const required = Object.keys(properties);

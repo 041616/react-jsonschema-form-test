@@ -9,6 +9,7 @@ import { generateCatalogItemData } from './components/catalogItem';
 import { generateFooterData } from './components/footer';
 import { generateSliderData } from './components/slider';
 import { generateTitleData } from './components/title';
+import { generateNavigationLinkData } from './components/navigationLink';
 
 
 export default function(initFormData) {
@@ -35,6 +36,7 @@ export default function(initFormData) {
         catalogItem: generateCatalogItemData(initFormData),
         footer: generateFooterData(initFormData),
         slider: generateSliderData(initFormData),
+        navigationLink: generateNavigationLinkData(initFormData),
     };
 };
 
