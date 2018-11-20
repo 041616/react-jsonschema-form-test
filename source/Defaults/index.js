@@ -4,6 +4,7 @@ import { generateHeaderData } from './components/header';
 import { generateSidebarData } from './components/sidebar';
 import { generateHorizontalMenuData } from './components/horizontalMenu';
 import { generateVerticalMenuData } from './components/verticalMenu';
+import { generateHamburgerMenuData } from './components/hamburgerMenu';
 import { generateCatalogItemData } from './components/catalogItem';
 import { generateFooterData } from './components/footer';
 import { generateSliderData } from './components/slider';
@@ -28,6 +29,7 @@ export default function(initFormData) {
         sidebar: generateSidebarData(initFormData),
         horizontalMenu: generateHorizontalMenuData(initFormData),
         verticalMenu: generateVerticalMenuData(initFormData),
+        hamburgerMenu: generateHamburgerMenuData(initFormData),
         catalogItem: generateCatalogItemData(initFormData),
         footer: generateFooterData(initFormData),
         slider: generateSliderData(initFormData),

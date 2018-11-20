@@ -5568,6 +5568,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./source/Defaults/components/hamburgerMenu.js":
+/*!*****************************************************!*\
+  !*** ./source/Defaults/components/hamburgerMenu.js ***!
+  \*****************************************************/
+/*! exports provided: generateHamburgerMenuData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateHamburgerMenuData\", function() { return generateHamburgerMenuData; });\n/* harmony import */ var tinycolor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tinycolor */ \"./tinycolor/index.js\");\n\n\nfunction generateHamburgerMenuData(_ref) {\n    var basic = _ref.basic,\n        horizontalMenu = _ref.horizontalMenu;\n\n    var backgroundColor = horizontalMenu.backgroundColor;\n    var textColor = Object(tinycolor__WEBPACK_IMPORTED_MODULE_0__[\"getTextColor\"])(backgroundColor, basic.textColor);\n    var hamburger = {\n        icon: {\n            file: '',\n            color: textColor\n        }\n    };\n    var search = {\n        icon: {\n            file: '',\n            color: textColor\n        }\n    };\n    var cart = {\n        icon: {\n            file: '',\n            color: textColor\n        }\n    };\n    var phone = {\n        icon: {\n            file: '',\n            color: textColor\n        }\n    };\n    return { backgroundColor: backgroundColor, textColor: textColor, hamburger: hamburger, search: search, cart: cart, phone: phone };\n};\n\n//# sourceURL=webpack:///./source/Defaults/components/hamburgerMenu.js?");
+
+/***/ }),
+
 /***/ "./source/Defaults/components/header.js":
 /*!**********************************************!*\
   !*** ./source/Defaults/components/header.js ***!
@@ -5648,7 +5660,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initFormData\", function() { return initFormData; });\n/* harmony import */ var _components_promoPanel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/promoPanel */ \"./source/Defaults/components/promoPanel.js\");\n/* harmony import */ var _components_buyButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/buyButton */ \"./source/Defaults/components/buyButton.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header */ \"./source/Defaults/components/header.js\");\n/* harmony import */ var _components_sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/sidebar */ \"./source/Defaults/components/sidebar.js\");\n/* harmony import */ var _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/horizontalMenu */ \"./source/Defaults/components/horizontalMenu.js\");\n/* harmony import */ var _components_verticalMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/verticalMenu */ \"./source/Defaults/components/verticalMenu.js\");\n/* harmony import */ var _components_catalogItem__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/catalogItem */ \"./source/Defaults/components/catalogItem.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/footer */ \"./source/Defaults/components/footer.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/slider */ \"./source/Defaults/components/slider.js\");\n\n\n\n\n\n\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (initFormData) {\n    var basic = initFormData.basic;\n\n    return {\n        basic: {\n            externalFontFamily: basic.externalFontFamily,\n            fontFamily: basic.fontFamily,\n            themePrimaryColor: basic.themePrimaryColor,\n            themeSecondaryColor: basic.themeSecondaryColor,\n            backgroundColor: basic.backgroundColor,\n            textColor: basic.textColor,\n            linkColor: basic.linkColor,\n            linkHoverColor: basic.linkHoverColor\n        },\n        promoPanel: Object(_components_promoPanel__WEBPACK_IMPORTED_MODULE_0__[\"generatePromoPanelData\"])(initFormData),\n        buyButton: Object(_components_buyButton__WEBPACK_IMPORTED_MODULE_1__[\"generateBuyButtonData\"])(initFormData),\n        header: Object(_components_header__WEBPACK_IMPORTED_MODULE_2__[\"generateHeaderData\"])(initFormData),\n        sidebar: Object(_components_sidebar__WEBPACK_IMPORTED_MODULE_3__[\"generateSidebarData\"])(initFormData),\n        horizontalMenu: Object(_components_horizontalMenu__WEBPACK_IMPORTED_MODULE_4__[\"generateHorizontalMenuData\"])(initFormData),\n        verticalMenu: Object(_components_verticalMenu__WEBPACK_IMPORTED_MODULE_5__[\"generateVerticalMenuData\"])(initFormData),\n        catalogItem: Object(_components_catalogItem__WEBPACK_IMPORTED_MODULE_6__[\"generateCatalogItemData\"])(initFormData),\n        footer: Object(_components_footer__WEBPACK_IMPORTED_MODULE_7__[\"generateFooterData\"])(initFormData),\n        slider: Object(_components_slider__WEBPACK_IMPORTED_MODULE_8__[\"generateSliderData\"])(initFormData)\n    };\n});;\n\nvar initFormData = {\n    basic: {\n        externalFontFamily: 'https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&amp;subset=cyrillic',\n        fontFamily: 'Ubuntu, sans-serif',\n        themePrimaryColor: '#35A4A9',\n        themeSecondaryColor: '#3882BF',\n        backgroundColor: '#DFDCE3',\n        textColor: '#333',\n        linkColor: '#3882BF',\n        linkHoverColor: '#2F619D'\n    },\n    promoPanel: {\n        backgroundColor: '#3882BF'\n    },\n    buyButton: {\n        backgroundColor: '#5E4DC7'\n    },\n    header: {\n        backgroundColor: '#F2F1F3'\n    },\n    sidebar: {\n        backgroundColor: '#FFF'\n    },\n    horizontalMenu: {\n        backgroundColor: '#FFF'\n    },\n    verticalMenu: {\n        backgroundColor: '#FFF'\n    },\n    catalogItem: {\n        backgroundColor: '#FFF',\n        stateAvailable: {\n            textColor: '#009A00'\n        },\n        stateOrder: {\n            textColor: '#CC0A91'\n        },\n        stateClarify: {\n            textColor: '#C10000'\n        }\n    },\n    footer: {\n        backgroundColor: '#333'\n    }\n};\n\n//# sourceURL=webpack:///./source/Defaults/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initFormData\", function() { return initFormData; });\n/* harmony import */ var _components_promoPanel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/promoPanel */ \"./source/Defaults/components/promoPanel.js\");\n/* harmony import */ var _components_buyButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/buyButton */ \"./source/Defaults/components/buyButton.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header */ \"./source/Defaults/components/header.js\");\n/* harmony import */ var _components_sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/sidebar */ \"./source/Defaults/components/sidebar.js\");\n/* harmony import */ var _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/horizontalMenu */ \"./source/Defaults/components/horizontalMenu.js\");\n/* harmony import */ var _components_verticalMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/verticalMenu */ \"./source/Defaults/components/verticalMenu.js\");\n/* harmony import */ var _components_hamburgerMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/hamburgerMenu */ \"./source/Defaults/components/hamburgerMenu.js\");\n/* harmony import */ var _components_catalogItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/catalogItem */ \"./source/Defaults/components/catalogItem.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/footer */ \"./source/Defaults/components/footer.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/slider */ \"./source/Defaults/components/slider.js\");\n\n\n\n\n\n\n\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (initFormData) {\n    var basic = initFormData.basic;\n\n    return {\n        basic: {\n            externalFontFamily: basic.externalFontFamily,\n            fontFamily: basic.fontFamily,\n            themePrimaryColor: basic.themePrimaryColor,\n            themeSecondaryColor: basic.themeSecondaryColor,\n            backgroundColor: basic.backgroundColor,\n            textColor: basic.textColor,\n            linkColor: basic.linkColor,\n            linkHoverColor: basic.linkHoverColor\n        },\n        promoPanel: Object(_components_promoPanel__WEBPACK_IMPORTED_MODULE_0__[\"generatePromoPanelData\"])(initFormData),\n        buyButton: Object(_components_buyButton__WEBPACK_IMPORTED_MODULE_1__[\"generateBuyButtonData\"])(initFormData),\n        header: Object(_components_header__WEBPACK_IMPORTED_MODULE_2__[\"generateHeaderData\"])(initFormData),\n        sidebar: Object(_components_sidebar__WEBPACK_IMPORTED_MODULE_3__[\"generateSidebarData\"])(initFormData),\n        horizontalMenu: Object(_components_horizontalMenu__WEBPACK_IMPORTED_MODULE_4__[\"generateHorizontalMenuData\"])(initFormData),\n        verticalMenu: Object(_components_verticalMenu__WEBPACK_IMPORTED_MODULE_5__[\"generateVerticalMenuData\"])(initFormData),\n        hamburgerMenu: Object(_components_hamburgerMenu__WEBPACK_IMPORTED_MODULE_6__[\"generateHamburgerMenuData\"])(initFormData),\n        catalogItem: Object(_components_catalogItem__WEBPACK_IMPORTED_MODULE_7__[\"generateCatalogItemData\"])(initFormData),\n        footer: Object(_components_footer__WEBPACK_IMPORTED_MODULE_8__[\"generateFooterData\"])(initFormData),\n        slider: Object(_components_slider__WEBPACK_IMPORTED_MODULE_9__[\"generateSliderData\"])(initFormData)\n    };\n});;\n\nvar initFormData = {\n    basic: {\n        externalFontFamily: 'https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&amp;subset=cyrillic',\n        fontFamily: 'Ubuntu, sans-serif',\n        themePrimaryColor: '#35A4A9',\n        themeSecondaryColor: '#3882BF',\n        backgroundColor: '#DFDCE3',\n        textColor: '#333',\n        linkColor: '#3882BF',\n        linkHoverColor: '#2F619D'\n    },\n    promoPanel: {\n        backgroundColor: '#3882BF'\n    },\n    buyButton: {\n        backgroundColor: '#5E4DC7'\n    },\n    header: {\n        backgroundColor: '#F2F1F3'\n    },\n    sidebar: {\n        backgroundColor: '#FFF'\n    },\n    horizontalMenu: {\n        backgroundColor: '#FFF'\n    },\n    verticalMenu: {\n        backgroundColor: '#FFF'\n    },\n    catalogItem: {\n        backgroundColor: '#FFF',\n        stateAvailable: {\n            textColor: '#009A00'\n        },\n        stateOrder: {\n            textColor: '#CC0A91'\n        },\n        stateClarify: {\n            textColor: '#C10000'\n        }\n    },\n    footer: {\n        backgroundColor: '#333'\n    }\n};\n\n//# sourceURL=webpack:///./source/Defaults/index.js?");
 
 /***/ }),
 
@@ -6415,6 +6427,234 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Sche
 
 /***/ }),
 
+/***/ "./source/Schema/components/hamburgerMenu/index.js":
+/*!*********************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/index.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_textColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/textColor */ \"./source/Schema/components/hamburgerMenu/properties/textColor.js\");\n/* harmony import */ var _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/backgroundColor */ \"./source/Schema/components/hamburgerMenu/properties/backgroundColor.js\");\n/* harmony import */ var _properties_cart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./properties/cart */ \"./source/Schema/components/hamburgerMenu/properties/cart/index.js\");\n/* harmony import */ var _properties_hamburger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./properties/hamburger */ \"./source/Schema/components/hamburgerMenu/properties/hamburger/index.js\");\n/* harmony import */ var _properties_phone__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./properties/phone */ \"./source/Schema/components/hamburgerMenu/properties/phone/index.js\");\n/* harmony import */ var _properties_search__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./properties/search */ \"./source/Schema/components/hamburgerMenu/properties/search/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\n\n\n\nvar NAME = 'hamburgerMenu';\n\nvar properties = Object.assign({}, _properties_textColor__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_backgroundColor__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _properties_hamburger__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _properties_search__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _properties_phone__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _properties_cart__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: 'Mobile top panel with menu, search, phone and cart buttons',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/backgroundColor.js":
+/*!******************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/backgroundColor.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'backgroundColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Background color of the mobile top panel'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/backgroundColor.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/cart/index.js":
+/*!*************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/cart/index.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'cart';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Cart\" button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/cart/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/index.js":
+/*!*****************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/index.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/file.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/color.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Cart\" icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/color.js":
+/*!****************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/color.js ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: '\"Cart\" icon color'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/file.js":
+/*!***************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/file.js ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG of the \"cart\" icon'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/cart/properties/icon/properties/file.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/hamburger/index.js":
+/*!******************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/hamburger/index.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'hamburger';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Hamburger\" button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/hamburger/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/index.js":
+/*!**********************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/index.js ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/file.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/color.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Hamburger\" icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/color.js":
+/*!*********************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/color.js ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: '\"Hamburger\" icon color'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/file.js":
+/*!********************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/file.js ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG of the \"hamburger\" icon'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/hamburger/properties/icon/properties/file.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/phone/index.js":
+/*!**************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/phone/index.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'phone';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Phone\" button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/phone/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/index.js":
+/*!******************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/index.js ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/file.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/color.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Phone\" icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/color.js":
+/*!*****************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/color.js ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: '\"Phone\" icon color'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/file.js":
+/*!****************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/file.js ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG of the \"phone\" icon'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/phone/properties/icon/properties/file.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/search/index.js":
+/*!***************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/search/index.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/icon */ \"./source/Schema/components/hamburgerMenu/properties/search/properties/icon/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar NAME = 'search';\n\nvar properties = Object.assign({}, _properties_icon__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Search\" button',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/search/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/search/properties/icon/index.js":
+/*!*******************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/search/properties/icon/index.js ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _properties_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties/file */ \"./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/file.js\");\n/* harmony import */ var _properties_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./properties/color */ \"./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/color.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar NAME = 'icon';\n\nvar properties = Object.assign({}, _properties_file__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _properties_color__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(Schema_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, {\n    type: 'object',\n    title: NAME,\n    description: '\"Search\" icon',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n}));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/search/properties/icon/index.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/color.js":
+/*!******************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/color.js ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'color';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: '\"Search\" icon color'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/color.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/file.js":
+/*!*****************************************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/file.js ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions/index */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'file';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'SVG of the \"search\" icon'\n}, Schema_definitions_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"].file)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/search/properties/icon/properties/file.js?");
+
+/***/ }),
+
+/***/ "./source/Schema/components/hamburgerMenu/properties/textColor.js":
+/*!************************************************************************!*\
+  !*** ./source/Schema/components/hamburgerMenu/properties/textColor.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Schema_definitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Schema/definitions */ \"./source/Schema/definitions/index.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\nvar NAME = 'textColor';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_defineProperty({}, NAME, Object.assign({\n    title: NAME,\n    description: 'Text color of the mobile top panel'\n}, Schema_definitions__WEBPACK_IMPORTED_MODULE_0__[\"default\"].color)));\n\n//# sourceURL=webpack:///./source/Schema/components/hamburgerMenu/properties/textColor.js?");
+
+/***/ }),
+
 /***/ "./source/Schema/components/header/index.js":
 /*!**************************************************!*\
   !*** ./source/Schema/components/header/index.js ***!
@@ -6999,7 +7239,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"schema\", function() { return schema; });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./basic */ \"./source/Schema/basic/index.js\");\n/* harmony import */ var _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/promoPanel */ \"./source/Schema/components/promoPanel/index.js\");\n/* harmony import */ var _components_buyButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/buyButton */ \"./source/Schema/components/buyButton/index.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/header */ \"./source/Schema/components/header/index.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/slider */ \"./source/Schema/components/slider/index.js\");\n/* harmony import */ var _components_sidebar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sidebar */ \"./source/Schema/components/sidebar/index.js\");\n/* harmony import */ var _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/horizontalMenu */ \"./source/Schema/components/horizontalMenu/index.js\");\n/* harmony import */ var _components_verticalMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/verticalMenu */ \"./source/Schema/components/verticalMenu/index.js\");\n/* harmony import */ var _components_catalogItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/catalogItem */ \"./source/Schema/components/catalogItem/index.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/footer */ \"./source/Schema/components/footer/index.js\");\n\n\n\n\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _basic__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _components_buyButton__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _components_header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _components_slider__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _components_sidebar__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _components_verticalMenu__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _components_catalogItem__WEBPACK_IMPORTED_MODULE_9__[\"default\"], _components_footer__WEBPACK_IMPORTED_MODULE_10__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\nvar schema = {\n    type: 'object',\n    description: 'Design settings',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n};\n\n//# sourceURL=webpack:///./source/Schema/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"schema\", function() { return schema; });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./source/Schema/utils.js\");\n/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./basic */ \"./source/Schema/basic/index.js\");\n/* harmony import */ var _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/promoPanel */ \"./source/Schema/components/promoPanel/index.js\");\n/* harmony import */ var _components_buyButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/buyButton */ \"./source/Schema/components/buyButton/index.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/header */ \"./source/Schema/components/header/index.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/slider */ \"./source/Schema/components/slider/index.js\");\n/* harmony import */ var _components_sidebar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sidebar */ \"./source/Schema/components/sidebar/index.js\");\n/* harmony import */ var _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/horizontalMenu */ \"./source/Schema/components/horizontalMenu/index.js\");\n/* harmony import */ var _components_verticalMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/verticalMenu */ \"./source/Schema/components/verticalMenu/index.js\");\n/* harmony import */ var _components_hamburgerMenu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/hamburgerMenu */ \"./source/Schema/components/hamburgerMenu/index.js\");\n/* harmony import */ var _components_catalogItem__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/catalogItem */ \"./source/Schema/components/catalogItem/index.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/footer */ \"./source/Schema/components/footer/index.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar properties = Object.assign({}, _basic__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _components_promoPanel__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _components_buyButton__WEBPACK_IMPORTED_MODULE_3__[\"default\"], _components_header__WEBPACK_IMPORTED_MODULE_4__[\"default\"], _components_slider__WEBPACK_IMPORTED_MODULE_5__[\"default\"], _components_sidebar__WEBPACK_IMPORTED_MODULE_6__[\"default\"], _components_horizontalMenu__WEBPACK_IMPORTED_MODULE_7__[\"default\"], _components_verticalMenu__WEBPACK_IMPORTED_MODULE_8__[\"default\"], _components_hamburgerMenu__WEBPACK_IMPORTED_MODULE_9__[\"default\"], _components_catalogItem__WEBPACK_IMPORTED_MODULE_10__[\"default\"], _components_footer__WEBPACK_IMPORTED_MODULE_11__[\"default\"]);\nvar required = Object.keys(properties);\nvar ui = Object(_utils__WEBPACK_IMPORTED_MODULE_0__[\"getKeyValues\"])('ui', properties);\n\nvar schema = {\n    type: 'object',\n    description: 'Design settings',\n    additionalProperties: false,\n    required: required,\n    properties: properties,\n    ui: ui\n};\n\n//# sourceURL=webpack:///./source/Schema/index.js?");
 
 /***/ }),
 
