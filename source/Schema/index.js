@@ -1,6 +1,7 @@
 import { getKeyValues } from './utils';
 import basic from './basic';
 import promoPanel from './components/promoPanel';
+import title from './components/title';
 import buyButton from './components/buyButton';
 import header from './components/header';
 import slider from './components/slider';
@@ -16,6 +17,7 @@ const properties = Object.assign(
     {},
     basic,
     promoPanel,
+    title,
     buyButton,
     header,
     slider,

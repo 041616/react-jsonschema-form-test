@@ -8,6 +8,7 @@ import { generateHamburgerMenuData } from './components/hamburgerMenu';
 import { generateCatalogItemData } from './components/catalogItem';
 import { generateFooterData } from './components/footer';
 import { generateSliderData } from './components/slider';
+import { generateTitleData } from './components/title';
 
 
 export default function(initFormData) {
@@ -24,6 +25,7 @@ export default function(initFormData) {
             linkHoverColor: basic.linkHoverColor,
         },
         promoPanel: generatePromoPanelData(initFormData),
+        title: generateTitleData(initFormData),
         buyButton: generateBuyButtonData(initFormData),
         header: generateHeaderData(initFormData),
         sidebar: generateSidebarData(initFormData),
