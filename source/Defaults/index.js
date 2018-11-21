@@ -12,6 +12,7 @@ import { generateTitleData } from './components/title';
 import { generateNavigationLinkData } from './components/navigationLink';
 import { generateGroupItemData } from './components/groupItem';
 import { generatePortfolioItemData } from './components/portfolioItem';
+import { generateUserContentData } from './components/userContent';
 
 
 export default function(initFormData) {
@@ -41,6 +42,7 @@ export default function(initFormData) {
         navigationLink: generateNavigationLinkData(initFormData),
         groupItem: generateGroupItemData(initFormData),
         portfolioItem: generatePortfolioItemData(initFormData),
+        userContent: generateUserContentData(initFormData),
     };
 };
 
