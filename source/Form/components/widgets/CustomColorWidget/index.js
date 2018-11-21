@@ -1,6 +1,6 @@
 import React from 'react';
 import { SketchPicker } from 'react-color';
-import chroma from 'chroma-js';
+import tc from 'tinycolor';
 import css from './styles.sss';
 
 
@@ -11,12 +11,10 @@ const COLOR_PICKER_WIDTH = 400;
 
 function getColorData(color) {
     if (!color) return { backgroudColor: null, textColor: null };
-    const chromaColor = color.rgb ?
-        chroma([color.rgb.r, color.rgb.g, color.rgb.b, color.rgb.a]) :
-        chroma(color);
+    const tColor = color.rgb ? tc(color.rgb) : tc(color);
     return {
-        backgroudColor: chromaColor.alpha() < 1 ? chromaColor.css() : chromaColor.hex(),
-        textColor: chromaColor.luminance() < 0.55 ? COLOR_WHITE : null,
+        backgroudColor: tColor.toText(),
+        textColor: tColor.toHsl().l < 0.7 ? COLOR_WHITE : null,
     };
 };
 

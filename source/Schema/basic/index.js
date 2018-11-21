@@ -1,39 +1,39 @@
-import { getKeyValues } from 'Schema/utils';
-import backgroundColor from './properties/background-color';
-import textColor from './properties/text-color';
-import fontFamily from './properties/font-family';
-import linkColor from './properties/link-color';
-import linkHoverColor from './properties/link-hover-color';
-import externalFontFamily from './properties/external-font-family';
+import { getKeyValues, getRequiredPropertyKeys } from 'Schema/utils';
+import backgroundColor from './properties/backgroundColor';
+import textColor from './properties/textColor';
+import fontFamily from './properties/fontFamily';
+import linkColor from './properties/linkColor';
+import linkHoverColor from './properties/linkHoverColor';
+import externalFontFamily from './properties/externalFontFamily';
+import themePrimaryColor from './properties/themePrimaryColor';
+import themeSecondaryColor from './properties/themeSecondaryColor';
 
 
-function getRequired(properties) {
-    const propertyKeys = Object.keys(properties);
-    const excludedPropertyKeys = [Object.keys(externalFontFamily)[0]];
-    return propertyKeys.filter(
-        propertyKey => !excludedPropertyKeys.includes(propertyKey)
-    );
-};
+const NAME = 'basic';
 
 
 const properties = Object.assign(
     {},
+    externalFontFamily,
+    fontFamily,
+    themePrimaryColor,
+    themeSecondaryColor,
     backgroundColor,
     textColor,
     linkColor,
     linkHoverColor,
-    fontFamily,
-    externalFontFamily,
 );
-const required = getRequired(properties);
+const required = getRequiredPropertyKeys(
+    Object.keys(properties),
+    [Object.keys(externalFontFamily)[0]]
+);
 const ui = getKeyValues('ui', properties);
-const propertyName = 'basic';
 
 
 export default {
-    [propertyName]: {
+    [NAME]: {
         type: 'object',
-        title: propertyName,
+        title: NAME,
         description: 'Basic design styles',
         additionalProperties: false,
         required,

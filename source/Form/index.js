@@ -1,8 +1,8 @@
 import React from 'react';
 import Form from 'react-jsonschema-form';
-import { saveAs } from 'file-saver/FileSaver';
-import { schema } from 'Schema';
-import primarySchema from 'Schema/basic/basic';
+import saveAs from 'file-saver';
+import schema from 'Schema';
+import initSchema from 'Schema/init';
 import { CustomFileWidget } from './components/widgets/CustomFileWidget/';
 import { CustomColorWidget } from './components/widgets/CustomColorWidget/';
 import { FieldTemplate } from './components/fields/FieldTemplate/';
@@ -22,7 +22,7 @@ class SchemaForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            formSchema: primarySchema,
+            formSchema: initSchema,
             formData: {},
             isFormBlank: true,
         };
@@ -59,7 +59,7 @@ class SchemaForm extends React.Component {
     handleCreateConfigClick() {
         if (isConfirmed()) {
             this.setState({
-                formSchema: primarySchema,
+                formSchema: initSchema,
                 formData: {},
                 isFormBlank: true,
             });
