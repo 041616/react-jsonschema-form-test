@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from 'react-jsonschema-form';
-import { saveAs } from 'file-saver/FileSaver';
-import { schema } from 'Schema';
+import saveAs from 'file-saver';
+import schema from 'Schema';
 import initSchema from 'Schema/init';
 import { CustomFileWidget } from './components/widgets/CustomFileWidget/';
 import { CustomColorWidget } from './components/widgets/CustomColorWidget/';

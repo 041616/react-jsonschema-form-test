@@ -42,7 +42,7 @@ const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
 
 
-export const schema = {
+export default {
     type: 'object',
     description: 'Design settings',
     additionalProperties: false,

@@ -8,7 +8,6 @@ module.exports = {
     mode: 'development',
     entry: {
         'index': path.join(__dirname, '/source/index.js'),
-        'schema': path.join(__dirname, '/source/Schema/index.js')
     },
     output: {
         path: path.join(__dirname, '/public/'),
