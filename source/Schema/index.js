@@ -11,6 +11,7 @@ import verticalMenu from './components/verticalMenu';
 import hamburgerMenu from './components/hamburgerMenu';
 import groupItem from './components/groupItem';
 import catalogItem from './components/catalogItem';
+import portfolioItem from './components/portfolioItem';
 import navigationLink from './components/navigationLink';
 import footer from './components/footer';
 
@@ -29,6 +30,7 @@ const properties = Object.assign(
     hamburgerMenu,
     groupItem,
     catalogItem,
+    portfolioItem,
     navigationLink,
     footer,
 );
