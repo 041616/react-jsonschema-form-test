@@ -13,6 +13,7 @@ import { generateNavigationLinkData } from './components/navigationLink';
 import { generateGroupItemData } from './components/groupItem';
 import { generatePortfolioItemData } from './components/portfolioItem';
 import { generateUserContentData } from './components/userContent';
+import { generateSocialNetworkData } from './components/socialNetwork';
 
 
 export default function(initFormData) {
@@ -43,6 +44,7 @@ export default function(initFormData) {
         groupItem: generateGroupItemData(initFormData),
         portfolioItem: generatePortfolioItemData(initFormData),
         userContent: generateUserContentData(initFormData),
+        socialNetwork: generateSocialNetworkData(),
     };
 };
 

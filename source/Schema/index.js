@@ -15,6 +15,7 @@ import portfolioItem from './components/portfolioItem';
 import userContent from './components/userContent';
 import navigationLink from './components/navigationLink';
 import footer from './components/footer';
+import socialNetwork from './components/socialNetwork';
 
 
 const properties = Object.assign(
@@ -35,6 +36,7 @@ const properties = Object.assign(
     userContent,
     navigationLink,
     footer,
+    socialNetwork,
 );
 const required = Object.keys(properties);
 const ui = getKeyValues('ui', properties);
